@@ -24,6 +24,11 @@ Features:
 
 -/Events (Public Events)
 
+-There's also a ton of unfinished stuff. 
+(We never got to finish the update we were working on.
+Feel free to expand on these if you plan on using the source)
+
+
 Speical Thanks to:
 ------------------------------------------		
 
