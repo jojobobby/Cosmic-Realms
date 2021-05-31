@@ -1,0 +1,11 @@
+﻿{
+  "name": "Forest Maze",
+  "sbName": "Forest Maze",
+  "isLimbo": false,
+  "difficulty": -1,
+  "background": 0,
+  "showDisplays": true,
+  "portals": [ 24372 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "ForestMaze.jm" ]
+}

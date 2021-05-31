@@ -1,0 +1,13 @@
+﻿{
+  "name": "Puppet Master's Encore",
+  "sbName": "Puppet Masters Encore",
+  "isLimbo": false,
+  "persist": false,
+  "difficulty": -1,
+  "background": 0,
+  "blocking": 1,
+  "showDisplays": true,
+  "portals": [ 29798 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "PuppetMastersEncore.jm" ]
+}

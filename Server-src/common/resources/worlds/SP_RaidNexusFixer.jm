@@ -1,0 +1,19 @@
+{
+  "height": 15,
+  "data": "eNpjYIADRgYmMGRkoD5gBkNsgAUqB4IsSG5B1seMoh/kTkw5mDwTmiwrXll0vfjtxe9m4vxLGcASRwDD/wDe",
+  "dict": [
+    { "ground": "Oryx Castle Rug" },
+    { "ground": "Tutorial Wood Floor" },
+    { "ground": "Wood Plank Floor" },
+    { "ground": "Space Void 1" },
+    {
+      "objs": [ { "id": "Moon Sigil" } ],
+      "ground": "Oryx Castle Rug"
+    },
+    {
+      "objs": [ { "id": "Nexus Spawn to Room" } ],
+      "ground": "Space Void 1"
+    }
+  ],
+  "width": 15
+}

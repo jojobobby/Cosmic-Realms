@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+
+  <Object type="0x4a4f" id="Patient Zero Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+      <File>playerskins16</File>
+      <Index>36</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x5461</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+  </Object>
+
+<Object type="0x7a98" id="SSJ Rage Trunks">
+		<Skin/>
+		<Class>Skin</Class>
+		<AnimatedTexture>
+			<File>sprites80x80</File>
+			<Index>12</Index>
+		</AnimatedTexture>
+		<Size>20</Size>
+		<size>20</size>
+		<NoSkinSelect/>
+		<PlayerClassType>0x0300</PlayerClassType>
+		<UnlockSpecial>Only for the trusted: (No Dyes).</UnlockSpecial>
+	</Object>
+
+<Object type="0x7a95" id="SSBK Goku">
+		<Skin/>
+		<Class>Skin</Class>
+		<AnimatedTexture>
+			<File>sprites80x80</File>
+			<Index>10</Index>
+		</AnimatedTexture>
+		<Size>20</Size>
+		<size>20</size>
+		<NoSkinSelect/>
+		<PlayerClassType>0x031f</PlayerClassType>
+		<UnlockSpecial>Only for the trusted: (No Dyes).</UnlockSpecial>
+	</Object>
+
+<Object type="0x7a97" id="SSJ Gogeta">
+		<Skin/>
+		<Class>Skin</Class>
+		<AnimatedTexture>
+			<File>sprites80x80</File>
+			<Index>11</Index>
+		</AnimatedTexture>
+		<Size>20</Size>
+		<size>20</size>
+		<NoSkinSelect/>
+		<PlayerClassType>0x030e</PlayerClassType>
+		<UnlockSpecial>Only for the trusted: (No Dyes).</UnlockSpecial>
+	</Object>
+
+<Object type="0x7a59" id="Goku Black Super">
+		<Skin/>
+		<Class>Skin</Class>
+		<AnimatedTexture>
+			<File>sprites80x80</File>
+			<Index>9</Index>
+		</AnimatedTexture>
+		<Size>20</Size>
+		<size>20</size>
+		<NoSkinSelect/>
+		<PlayerClassType>0x031d</PlayerClassType>
+		<UnlockSpecial>Only for the trusted: (No Dyes).</UnlockSpecial>
+	</Object>
+
+<Object type="0x7a56" id="Goku Black (Base) Skin">
+    		<Skin/>
+    		<Class>Skin</Class>
+    	   <AnimatedTexture>
+            			<File>sprites64x64</File>
+            			<Index>13</Index>
+            		</AnimatedTexture>
+            		<Size>20</Size>
+            		<size>20</size>
+            		<NoSkinSelect/>
+    		<PlayerClassType>0x031d</PlayerClassType>
+    		<UnlockSpecial>Only for the trusted: (No Dyes).</UnlockSpecial>
+    	</Object>
+
+<Object type="0x7a55" id="Super Saiyan 3 Goku Skin">
+    		<Skin/>
+    		<Class>Skin</Class>
+    	   <AnimatedTexture>
+            			<File>sprites64x64</File>
+            			<Index>12</Index>
+            		</AnimatedTexture>
+            		<Size>20</Size>
+            		<size>20</size>
+            		<NoSkinSelect/>
+    		<PlayerClassType>0x031d</PlayerClassType>
+    		<UnlockSpecial>Only for the trusted: (No Dyes).</UnlockSpecial>
+    	</Object>
+
+	<Object type="0x3125" id="Developer">
+    		<Skin/>
+    		<Class>Skin</Class>
+    		<AnimatedTexture>
+    			<File>playerskins</File>
+    			<Index>6</Index>
+    		</AnimatedTexture>
+    		<PlayerClassType>0x031f</PlayerClassType>
+    		<UnlockSpecial>Only for the trusted: (No Dyes).</UnlockSpecial>
+    	</Object>
+    	<Object type="0x3127" id="The Shattered Guard">
+    		<Skin/>
+    		<Class>Skin</Class>
+    		<AnimatedTexture>
+    			<File>playerskins</File>
+    			<Index>5</Index>
+    		</AnimatedTexture>
+    		<PlayerClassType>0x031d</PlayerClassType>
+    		<UnlockSpecial>Drops from Shatters Bridge Guardian: (No Dyes).</UnlockSpecial>
+    	</Object>
+    	<Object type="0x3126" id="Demon Queen">
+    		<Skin/>
+    		<Class>Skin</Class>
+    		<AnimatedTexture>
+    			<File>playerskins</File>
+    			<Index>4</Index>
+    		</AnimatedTexture>
+    		<PlayerClassType>0x030e</PlayerClassType>
+    		<UnlockSpecial>Drops from Red Demon: (No Dyes).</UnlockSpecial>
+    	</Object>
+    	<Object type="0x3124" id="Slimey Knight">
+    		<Skin/>
+    		<Class>Skin</Class>
+    		<AnimatedTexture>
+    			<File>playerskins</File>
+    			<Index>7</Index>
+    		</AnimatedTexture>
+    		<PlayerClassType>0x031e</PlayerClassType>
+    		<UnlockSpecial>Drops from Amalgamation.</UnlockSpecial>
+    	</Object>
+ <Object type="0x6181" id="Challenger Irelia">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+        <File>playerskins</File>
+        <Index>2</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0323</PlayerClassType>
+      <UnlockSpecial>Free with the /Claim Command.</UnlockSpecial>
+    </Object>
+  <Object type="0x6180" id="Challenger Yasuo">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+        <File>playerskins</File>
+        <Index>0</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x0326</PlayerClassType>
+      <UnlockSpecial>Free with the /Claim Command.</UnlockSpecial>
+    </Object>
+     <Object type="0x6179" id="Challenger Kayn">
+          <Skin/>
+          <Class>Skin</Class>
+          <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>1</Index>
+          </AnimatedTexture>
+          <PlayerClassType>0x0326</PlayerClassType>
+          <UnlockSpecial>Free with the /Claim Command.</UnlockSpecial>
+        </Object>
+
+  <Object type="0xff10" id="Woodland Sorcerer Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+      <File>playerskins16</File>
+      <Index>12</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0325</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    <DisplayId>Woodland Sorcerer Set Skin</DisplayId>
+  </Object>
+   <Object type="0x3116" id="Twindrill Singer">
+      <Skin/>
+      <Class>Skin</Class>
+      <AnimatedTexture>
+        <File>playerskins</File>
+        <Index>3</Index>
+      </AnimatedTexture>
+      <PlayerClassType>0x5460</PlayerClassType>
+      <UnlockSpecial>Drops from the Puppet Master.</UnlockSpecial>
+    </Object>
+    <Object type="0x0401" id="Oryx Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>00</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x031e</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x745A" id="Geb Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>01</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0310</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x745B" id="Phylactery Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>02</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0323</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x745C" id="Swoll Paladin Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>03</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x031f</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x21a6" id="Skuld Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>04</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0300</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x0402" id="Twilight Archmage Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>05</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x030e</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x7fce" id="Dragon Tamer Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>0x0a</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x031d</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x08fd" id="Lost Golem Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>14</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0324</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+
+    <Object type="0x4c04" id="Hollow King Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>16</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0321</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0xbc1" id="Horrific Sorcerer Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>17</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0325</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0xbdc" id="Parasitic Host Set">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>18</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0320</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0xf3b" id="Mad God's Messenger Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>23</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0310</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x1849" id="Horticultural Huntress Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>25</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0322</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x21df" id="Pirate King Warrior Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>24</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x031d</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x4b4b" id="Acidified Assassin Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>26</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0320</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x4b48" id="Magmatic Mystic Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>27</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0323</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x4b50" id="Crystal Kunoichi Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>28</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0326</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+    <Object type="0x52ea" id="Daring Discoverer Samurai Set Skin">
+    <Skin/>
+    <Class>Skin</Class>
+    <AnimatedTexture>
+    <File>playerskins16</File>
+    <Index>30</Index>
+    </AnimatedTexture>
+    <PlayerClassType>0x0326</PlayerClassType>
+    <UnlockSpecial>Set Skin</UnlockSpecial>
+    <NoSkinSelect/>
+    </Object>
+<Object id="Angelic Bard" type="0x4e00">
+<Skin/>
+<Class>Skin</Class>
+<AnimatedTexture>
+<File>playerskins16</File>
+<Index>33</Index>
+</AnimatedTexture>
+<PlayerClassType>0x031c</PlayerClassType>
+<UnlockSpecial>Set Skin</UnlockSpecial>
+<NoSkinSelect/>
+</Object>
+
+</Objects>

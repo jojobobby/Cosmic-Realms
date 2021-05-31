@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+  <Object type="0x074d" id="Market Object">
+    <Class>MarketObject</Class>
+      <Texture>
+        <File>mountainTempleObjects16x16</File>
+        <Index>0x72</Index>
+      </Texture>
+      <Animation prob="0.50" period="2">
+         <Frame time="0.75">
+            <Texture>
+                <File>mountainTempleObjects16x16</File>
+                      <Index>0x72</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.25">
+            <Texture>
+             <File>mountainTempleObjects16x16</File>
+                   <Index>0x73</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.25">
+            <Texture>
+               <File>mountainTempleObjects16x16</File>
+                     <Index>0x74</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.75">
+            <Texture>
+              <File>mountainTempleObjects16x16</File>
+                    <Index>0x75</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+    <OccupySquare/>
+    <ShadowSize>0</ShadowSize>
+    <Size>150</Size>
+    <Static/>
+  </Object>
+</Objects>

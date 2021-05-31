@@ -1,0 +1,14 @@
+﻿{
+	"name":"Wine Cellar",
+	"sbName":"Wine Cellar",
+	"isLimbo":false,
+	"difficulty":-1,
+	"background":0,
+	"blocking":1,
+	"restrictTp":true,
+	"showDisplays":true,
+	"portals":[578],
+  "maps": [ "WineCellar.jm" ],
+   "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "music": ["DeepCellar"]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "name": "The Crawling Depths",
+  "sbName": "The Crawling Depths",
+  "isLimbo": false,
+  "persist": false,
+  "difficulty": -1,
+  "background": 0,
+  "blocking": 1,
+  "showDisplays": true,
+  "portals": [ 1838 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "TheCrawlingDepths.jm" ]
+}

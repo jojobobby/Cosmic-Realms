@@ -1,0 +1,12 @@
+﻿{
+	"name":"Haunted Cemetery Final Battle",
+	"sbName":"Haunted Cemetery Final Battle",
+	"isLimbo":false,
+	"persist":false,
+	"difficulty":-1,
+	"background":0,
+	"blocking":0,
+	"showDisplays":true,
+	"portals":[24361],
+	"maps":["HauntedCemeteryFinalBattle.jm"]
+}

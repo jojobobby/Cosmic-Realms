@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Objects>
+  <Object type="0x4309" id="Debug Spawn">
+    <Class>Character</Class>
+    <Texture>
+      <File>invisible</File>
+      <Index>0</Index>
+    </Texture>
+    <Size>0</Size>
+    <ShadowSize>80</ShadowSize>
+    <NoMiniMap/>
+  </Object>
+</Objects>

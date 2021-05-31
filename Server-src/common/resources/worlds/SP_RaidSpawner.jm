@@ -1,0 +1,19 @@
+{
+  "height": 15,
+  "data": "eNqlj0EKACAIBDfL6v8vDjTSwi61A8IyHhRYSSAhI8rNFsGs9l+bHAQWa9AGH90bRpV539h7c6jtDru5zf0efvRmNWajBHYAroACIA==",
+  "width": 15,
+  "dict": [
+    { "ground": "Oryx Castle Rug" },
+    { "ground": "Duelist Vargo ground 14" },
+    { "ground": "Duelist Vargo Rug 4" },
+    { "ground": "Duelist Vargo ground 13" },
+    { "ground": "Duelist Vargo Rug 1" },
+    { "ground": "Duelist Vargo ground" },
+    {
+      "objs": [ { "id": "Raid Portal Spawner" } ],
+      "ground": "Duelist Vargo ground"
+    },
+    { "ground": "Duelist Vargo ground 11" },
+    { "ground": "Duelist Vargo ground 10" }
+  ]
+}

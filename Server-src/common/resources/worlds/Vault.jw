@@ -1,0 +1,13 @@
+{
+	"id":-5,
+	"isLimbo":true,
+	"name":"Vault",
+	"sbName":"Vault",
+	"difficulty":-1,
+	"background":0,
+	"restrictTp":false,
+	"showDisplays":true,
+	"portals":[1824],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Vault.mp3" ],
+	"maps":["Vault.jm"]
+}

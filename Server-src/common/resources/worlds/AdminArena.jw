@@ -1,0 +1,12 @@
+﻿{
+	"name":"Admin Arena",
+	"sbName":"Admin Arena",
+	"isLimbo":false,
+	"persist":false,
+	"difficulty":-1,
+	"background":0,
+	"blocking":1,
+  "showDisplays": true,
+  "music": [ "https://iii.ijjiii.is/45b6cc3753dcea209fc1aef4a7d75c79/Zp3GSiHdvn8/rizuzcsozmm" ],
+	"maps":["AdminArena.jm"]
+}

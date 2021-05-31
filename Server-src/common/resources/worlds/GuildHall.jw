@@ -1,0 +1,14 @@
+﻿{
+	"id":-8,
+	"isLimbo":true,
+	"persist":false,
+	"name":"GuildHall",
+	"sbName":"GuildHall",
+	"difficulty":-1,
+	"background":0,
+	"blocking":0,
+	"restrictTp":false,
+	"showDisplays":true,
+	"portals":[0x072f],
+	"maps":["GuildHall0.wmap", "GuildHall1.wmap", "GuildHall2.wmap", "GuildHall3.wmap"]
+}

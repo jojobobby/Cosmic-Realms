@@ -1,0 +1,12 @@
+﻿{
+  "name": "The Lost Halls",
+  "sbName": "The Lost Halls",
+  "isLimbo": false,
+  "difficulty": -1,
+  "background": 0,
+  "blocking": 1,
+  "showDisplays": true,
+  "portals": [ 0x4049 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "LostHalls.jm" ]
+}

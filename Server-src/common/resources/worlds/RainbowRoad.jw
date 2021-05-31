@@ -1,0 +1,12 @@
+{
+  "name": "Rainbow Road",
+  "sbName": "Rainbow Road",
+  "isLimbo": false,
+  "difficulty": -1,
+  "background": 0,
+  "blocking": 0,
+  "showDisplays": true,
+  "portals": [ 0x1648 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "RainbowRoad.jm" ]
+}

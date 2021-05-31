@@ -1,0 +1,14 @@
+﻿{
+    "id": 0,
+    "isLimbo": false,
+    "persist": false,
+    "name": "Walmart4",
+    "sbName": "Walmart 4",
+    "difficulty": 0,
+    "background": 0,
+    "blocking": 2,
+    "restrictTp": false,
+    "showDisplays": false,
+  "portals": [0x7313],
+    "maps": ["Walmart4.jm"]
+}

@@ -1,0 +1,12 @@
+﻿{
+  "id": "-12",
+  "name": "Pet Yard",
+  "sbName": "Pet Yard",
+  "isLimbo": false,
+  "difficulty": -1,
+  "background": 0,
+  "blocking": 1,
+  "showDisplays": true,
+  "portals": [ 0x0753 ],
+  "maps": [ "PetYard_Common.wmap", "PetYard_Uncommon.wmap", "PetYard_Rare.wmap", "PetYard_Legendary.wmap", "PetYard_Divine.wmap" ]
+}

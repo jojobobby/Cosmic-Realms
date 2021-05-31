@@ -1,0 +1,11 @@
+{
+	"name":"Shrek's Swamp",
+	"sbName":"Shrek's Swamp",
+	"isLimbo":false,
+	"difficulty":-1,
+	"background":0,
+	"blocking":1,
+	"showDisplays":true,
+	"portals":[],
+  "maps": [ "shrek.jm" ]
+}

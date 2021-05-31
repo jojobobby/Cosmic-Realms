@@ -1,0 +1,13 @@
+﻿{
+  "name": "Deep Cellar",
+  "sbName": "Deep Cellar",
+  "isLimbo": false,
+  "difficulty": -1,
+  "background": 0,
+  "blocking": 1,
+  "restrictTp": true,
+  "showDisplays": true,
+  "portals": [ 0x2970 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "DeepCellar.jm" ]
+}

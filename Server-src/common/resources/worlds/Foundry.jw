@@ -1,0 +1,14 @@
+{
+  "id": 0,
+  "isLimbo": false,
+  "name": "Foundry",
+  "sbName": "Foundry",
+  "difficulty": 2,
+  "background": 0,
+  "blocking": 1,
+  "restrictTp": false,
+  "showDisplays": false,
+  "portals": [ 0x5750 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "Foundry.jm" ]
+}

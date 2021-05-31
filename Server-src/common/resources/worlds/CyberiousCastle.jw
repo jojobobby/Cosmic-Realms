@@ -1,0 +1,14 @@
+﻿{
+  "name": "Castle of Cyberious",
+  "sbName": "Castle of Cyberious",
+  "isLimbo": false,
+  "persist": false,
+  "difficulty": -1,
+  "restrictTp": true,
+  "background": 0,
+  "blocking": 1,
+  "showDisplays": true,
+  "portals": [ 0x4294 ],
+  "maps": [ "CyberiousCastle.jm" ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ]
+}

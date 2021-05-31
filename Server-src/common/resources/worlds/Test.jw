@@ -1,0 +1,13 @@
+﻿{
+	"id":-6,
+	"isLimbo":true,
+	"persist":false,
+	"name":"Test",
+	"sbName":"Test",
+	"difficulty":-1,
+	"blocking":1,
+	"background":0,
+	"restrictTp":false,
+	"showDisplays":true,
+	"maps":["Vault.jm"]
+}

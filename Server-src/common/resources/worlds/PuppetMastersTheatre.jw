@@ -1,0 +1,13 @@
+﻿{
+	"name":"Puppet Master’s Theatre",
+	"sbName":"Puppet Master’s Theatre",
+	"isLimbo":false,
+	"persist":false,
+	"difficulty":-1,
+	"background":0,
+	"blocking":0,
+	"showDisplays":true,
+  "portals": [ 9043 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Puppet.mp3" ],
+  "maps": [ "PuppetMastersTheatreOLD2.jm" ]
+}

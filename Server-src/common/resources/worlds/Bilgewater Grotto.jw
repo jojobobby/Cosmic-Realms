@@ -1,0 +1,15 @@
+{
+  "id": 0,
+  "isLimbo": false,
+  "persist": false,
+  "name": "Bilgewater's Grotto",
+  "sbName": "Bilgewater's Grotto",
+  "difficulty": 5,
+  "background": 0,
+  "blocking": 0,
+  "restrictTp": false,
+  "showDisplays": false,
+  "portals": [ 0x708b ],
+  "maps": [ "BilgewaterGrotto.jm" ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ]
+}

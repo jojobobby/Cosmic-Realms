@@ -1,0 +1,14 @@
+{
+  "id": 0,
+  "isLimbo": false,
+  "name": "Manor of the Immortals",
+  "sbName": "Manor of the Immortals",
+  "difficulty": 4,
+  "background": 0,
+  "blocking": 1,
+  "restrictTp": false,
+  "showDisplays": false,
+  "portals": [ 0x0739 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "ManoroftheImmortalsOLD.jm" ]
+}

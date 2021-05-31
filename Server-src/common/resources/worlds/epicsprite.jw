@@ -1,0 +1,12 @@
+{
+  "name": "Epic Sprite World",
+  "sbName": "Epic Sprite World",
+  "isLimbo": false,
+  "difficulty": -1,
+  "background": 0,
+  "blocking": 1,
+  "showDisplays": true,
+  "portals": [ 0x7d6d ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "epicsprite.jm" ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": 0,
+  "isLimbo": false,
+  "name": "CultistHideout",
+  "sbName": "Cultist Hideout",
+  "difficulty": 4,
+  "background": 0,
+  "blocking": 1,
+  "restrictTp": true,
+  "showDisplays": true,
+  "portals": [ 0x8772 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "CultistHideout.jm" ]
+}

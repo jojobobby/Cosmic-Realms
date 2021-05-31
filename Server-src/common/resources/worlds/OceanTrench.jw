@@ -1,0 +1,12 @@
+﻿{
+  "name": "Ocean Trench",
+  "sbName": "Ocean Trench",
+  "isLimbo": false,
+  "difficulty": -1,
+  "background": 0,
+  "blocking": 1,
+  "showDisplays": true,
+  "portals": [ 1840 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "OceanTrenchOLD.jm" ]
+}

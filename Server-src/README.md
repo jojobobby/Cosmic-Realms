@@ -1,0 +1,11 @@
+##Credits
+- NR-Core << base src
+- GhostMaree << ghostmaree-core
+- Keathiz << some gay stuff
+- DodoTheBird << Map Designer
+- ossimc82 << forge ui, achievements popups, emotes
+- club559 << craft recipes
+- Devwarlt << some loe stuff
+- Slendergo << for some tips
+- Sebafra << daily rewards
+- (biggest shit i ever made)

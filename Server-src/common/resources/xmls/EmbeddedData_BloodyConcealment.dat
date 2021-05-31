@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Objects>
+  <Object type="0x10002" id="Infestation 1">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>lofiObja</File>
+      <Index>0x57</Index>
+    </Texture>
+    <AngleCorrection>1</AngleCorrection>
+  </Object>
+  
+  <Object type="0x10001" id="Infestation 2">
+    <Class>Projectile</Class>
+    <Texture>
+      <File>lofiObja</File>
+      <Index>0x56</Index>
+    </Texture>
+    <Rotation>80</Rotation>
+  </Object>
+  
+   <Object type="0x10000" id="Blood Thirster">
+      <Group>Greater Demons</Group>
+      <Enemy/>
+      <Class>Character</Class>
+     <Texture>
+       <File>chars16x16dEncounters</File>
+       <Index>86</Index>
+     </Texture>
+      <HitSound>monster/greater_demons_hit</HitSound>
+      <DeathSound>monster/greater_demons_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>6750</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Infestation 1</ObjectId>
+         <Damage>85</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>90</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+</Objects>

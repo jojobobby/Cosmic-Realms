@@ -1,0 +1,14 @@
+﻿{
+  "isLimbo": false,
+  "persist": false,
+  "name": "The Void",
+  "sbName": "The Void",
+  "difficulty": 5,
+  "background": 0,
+  "blocking": 0,
+  "restrictTp": false,
+  "showDisplays": false,
+  "portals": [ 0x8222 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Void.mp3" ],
+  "maps": [ "TheVoid.jm" ]
+}

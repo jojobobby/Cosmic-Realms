@@ -1,0 +1,19 @@
+<MysteryBoxData version = "1408515972.279192">
+
+
+  -<MysteryBox title = "Super ST Alchemist" weight="-1" id="33">
+
+    <Description/>
+
+    <Contents>9063,9062,9061,9060,29496,29497,29504,29505,1826,29529,32695,303,29703,21089,21570,21529,21540,29538,1808,3089,3293,303,29703,21089,21570,21529,21540,29538,1808,3089,3293,303,29703,21089,21570,21529,21540,29538,1808,3089,3293</Contents>
+
+    <Price currency="1" amount="500"/>
+
+    <Image>https://cdn.discordapp.com/attachments/579875698638848010/579877594858651653/Alchemist_Special_Offer_temlpatte.png</Image>
+
+    <Icon/>
+
+    <StartTime>2020-01-01 13:25:20</StartTime>
+
+  </MysteryBox>
+</MysteryBoxData>

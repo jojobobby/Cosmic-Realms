@@ -1,0 +1,15 @@
+{
+  "id": 0,
+  "isLimbo": false,
+  "persist": false,
+  "name": "DeathArena",
+  "sbName": "Gladiator's Planet",
+  "difficulty": 0,
+  "background": 0,
+  "blocking": 0,
+  "restrictTp": true,
+  "showDisplays": false,
+  "portals": [ 0x441c ],
+  "maps": [ "arena.jm", "arena2.jm", "arena3.jm", "arena4.jm", "arena5.jm", "arena6.jm", "arena7.jm" ],
+  "music": [ "" ]
+}

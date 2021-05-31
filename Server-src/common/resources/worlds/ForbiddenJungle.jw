@@ -1,0 +1,11 @@
+﻿{
+  "name": "Forbidden Jungle",
+  "sbName": "Forbidden Jungle",
+  "isLimbo": false,
+  "difficulty": -1,
+  "background": 0,
+  "showDisplays": true,
+  "portals": [ 1843 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "ForbiddenJungle.jm" ]
+}

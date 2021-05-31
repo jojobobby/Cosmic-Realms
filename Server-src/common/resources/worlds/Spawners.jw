@@ -1,0 +1,12 @@
+﻿{
+	"id":-16,
+	"isLimbo":false,
+	"name":"Spawners",
+	"sbName":"Spawners",
+	"difficulty":-1,
+	"background":0,
+	"blocking":1,
+	"restrictTp":false,
+	"showDisplays":true,
+	"maps":["Spawners.jm"]
+}

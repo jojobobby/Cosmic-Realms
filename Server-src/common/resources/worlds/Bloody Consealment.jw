@@ -1,0 +1,12 @@
+﻿{
+  "name": "Bloody Consealment",
+  "sbName": "Bloody Consealment",
+  "isLimbo": false,
+  "persist": false,
+  "difficulty": -1,
+  "background": 0,
+  "showDisplays": true,
+  "portals": [ 0x2908 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "Bloody Consealment.jm" ]
+}

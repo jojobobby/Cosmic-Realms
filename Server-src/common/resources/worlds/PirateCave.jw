@@ -1,0 +1,13 @@
+﻿{
+  "name": "Pirate Cave",
+  "sbName": "Pirate Cave",
+  "isLimbo": false,
+  "persist": false,
+  "difficulty": -1,
+  "background": 0,
+  "blocking": 0,
+  "showDisplays": true,
+  "portals": [ 1815 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "PirateCave.jm" ]
+}

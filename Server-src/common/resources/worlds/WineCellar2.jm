@@ -1,0 +1,26 @@
+{
+  "height": 103,
+  "data": "eNrt3MERgDAMA0ETMP2XnAb4y0x2roId/VVVV7QVLu2/6wk2w98BeQ/yn74/Pz8/Pz8//1n+xc/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz//Ra39+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+/iH+jtjb/iP8Z/9fpOPn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn5/91G3Y3ZCM=",
+  "dict": [
+    { "objs": [ { "id": "Wine Walls" } ] },
+    {},
+    {
+      "ground": "Forest Dirt",
+      "objs": [ { "id": "Wine Walls" } ]
+    },
+    {
+      "ground": "Hot Lava",
+      "objs": [ { "id": "Wine Walls" } ]
+    },
+    { "ground": "Purple Stone Dark" },
+    {
+      "ground": "Purple Stone Dark",
+      "regions": [ { "id": "Spawn" } ]
+    },
+    {
+      "ground": "Purple Stone Dark",
+      "objs": [ { "id": "Tidale, The Defender of the Ancients" } ]
+    }
+  ],
+  "width": 128
+}

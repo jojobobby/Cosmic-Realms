@@ -1,0 +1,13 @@
+﻿{
+  "name": "Silent Wilderness",
+  "sbName": "Silent Wilderness",
+  "isLimbo": false,
+  "persist": false,
+  "difficulty": 5,
+  "background": 0,
+  "blocking": 1,
+  "showDisplays": true,
+  "portals": [ 0x317c ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "SilentWilderness.jm" ]
+}

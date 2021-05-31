@@ -1,0 +1,44 @@
+{
+  "height": 39,
+  "data": "eNqtltsSgyAMRA0K6e3/v7dYbTGYy6p1Z3ygeCYk2ZJhcB/a6dzTvk/DWDVV5aoz3GV/XpVWkhTKlCxPCWCirFlzBkaXuGTru7983lzlUXviTdDGX64wmkbc0rKIDqHN504KUdKOaup45PL4J5soIyS1xxovXskbnqxrJCvOFuFMSxey10dI0HniTKA8uxpylUyPMVxd3mWQhCM8Hoe1abwSxHdXiaxU5AHxtAjZ4WXAHbGfEV6GaVnUI+oNtKPpkieKwqM/eG3r4G0HlgP/C32E1/zLuzNT55D2C+IuVnL4rN0SO1jvX23H68PTT8wnstB4HhHvxufK87sQc4ack6Ibzurg720Z3+io7BlmISYjCm3CytBENBnE0q2ngHZs/rs6U06nWPb8vNz5/5vLQc4bdDIW4Q==",
+  "width": 40,
+  "dict": [
+    {},
+    { "objs": [ { "id": "Spider Dirt Wall" } ] },
+    {
+      "objs": [ { "id": "Treasure Chests" } ],
+      "ground": "Dirt"
+    },
+    {
+      "objs": [ { "id": "Treasure Pot" } ],
+      "ground": "Dirt"
+    },
+    {
+      "objs": [ { "id": "Treasure Pile" } ],
+      "ground": "Dirt"
+    },
+    { "ground": "Dirt" },
+    {
+      "objs": [ { "id": "Treasure Rocks" } ],
+      "ground": "Dirt"
+    },
+    { "ground": "Dirt Hole" },
+    { "objs": [ { "id": "0ADouble" } ] },
+    {
+      "objs": [ { "id": "Golden Oryx Effigy" } ],
+      "ground": "Dirt Hole"
+    },
+    {
+      "objs": [ { "id": "Spider Dirt Wall" } ],
+      "ground": "Dirt"
+    },
+    {
+      "objs": [ { "id": "Realm Portal" } ],
+      "ground": "Dirt"
+    },
+    {
+      "regions": [ { "id": "Spawn" } ],
+      "ground": "Dirt"
+    }
+  ]
+}

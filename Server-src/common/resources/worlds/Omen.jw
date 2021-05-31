@@ -1,0 +1,12 @@
+﻿{
+  "name": "HauntedOmen",
+  "sbName": "Haunted Omen",
+  "isLimbo": false,
+  "persist": false,
+  "difficulty": -1,
+  "background": 0,
+  "showDisplays": true,
+  "portals": [ 0x7408 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "Omen.jm" ]
+}

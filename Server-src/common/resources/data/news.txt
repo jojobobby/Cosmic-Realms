@@ -1,0 +1,33 @@
+[{
+	"slot": 3, 
+	"linkType": 1, 
+	"title": "Discord", 
+	"image": "https://cdn.discordapp.com/attachments/729840373169520660/734912459571462184/Discord.png", 
+	"priority": 759, 
+	"linkDetail": "https://discord.gg/rvdPJGp", 
+	"platform": "kabam.com,kongregate,steam,rotmg", 
+	"startTime": 1413334800000, 
+	"endTime": 2214022340000
+}, 
+{
+	"slot": 2, 
+	"linkType": 1, 
+	"title": "Support", 
+	"image": "https://cdn.discordapp.com/attachments/729840373169520660/734913839233237043/donate.png", 
+	"priority": 756, 
+	"linkDetail": "https://discord.gg/rvdPJGp", 
+	"platform": "kabam.com,kongregate,steam,rotmg", 
+	"startTime": 1412730000000, 
+	"endTime": 2213417540000
+}, 
+{
+	"slot": 1, 
+	"linkType": 1, 
+	"title": "Forge List", 
+	"image": "https://cdn.discordapp.com/attachments/729840373169520660/734912455293141032/Chests.png", 
+	"priority": 757, 
+	"linkDetail": "http://tidan-realms-v5.wikidot.com/crafting-recipes", 
+	"platform": "kabam.com,kongregate,steam,rotmg", 
+	"startTime": 1413199137000, 
+	"endTime": 2213935940000
+}]

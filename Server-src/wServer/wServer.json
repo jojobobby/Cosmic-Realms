@@ -1,0 +1,31 @@
+{
+  "dbInfo": {
+    "host": "127.0.0.1",
+    "port": "6379",
+    "auth": "",
+    "index": "0"
+  },
+  "serverInfo": {
+    "type": "World",
+    "name": "NAEast",
+    "address": "127.0.0.1", //161.129.67.221 25.114.225.140
+    "port": "2050",
+    "coordinates": {
+      "latitude": "0",
+      "longitude": "0"
+    },
+    "adminOnly": "false"
+  },
+  "serverSettings": {
+    "logFolder": "./logs",
+    "resourceFolder": "./resources",
+    "version": "Release.2",
+    "tps": "10",
+    "mode": "Single",
+    "key": "B1A5ED",
+    "maxConnections": "512",
+    "maxPlayers": "200",
+    "maxPlayersWithPriority": "220",
+    "enablePets": "true"
+  }
+}

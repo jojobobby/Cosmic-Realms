@@ -1,0 +1,21 @@
+[  
+  {  
+    "weight":3,
+    "title":"[IMPORTANT] Protect your Account",
+    "text":"Recently there has been a lot of forgotten passwords and lost accounts, please make sure to: <ul><li>Paste your current password on a notepad or anywhere. <b>Remember, The moderation team and the developers have no way of getting your password back.</b>.</li><li>Also, Do not use hacked clients, they have the ability to steal your password and username.</li>",
+    "showAtStartup":false,
+    "newsKey":"ahVzfnJlYWxtb2Z0aGVtYWRnb2RocmRyFwsSCkluR2FtZU5ld3MYgICwlazImAsM",
+    "platform":"kongregate,steam,rotmg",
+    "startTime":1492041600000
+  },
+  {  
+    "weight":4,
+    "title":"END OF BETA Patch v1.1",
+    "text":"<p><b>Void Entity Event!</b><ul><li>As compensation for the wipe at the end of beta, we've decided to host a lost halls chest event, after killing the Void Entity a chest will spawn, upon killing it you have a chance to get the [Void Archer Set] and other useful items. The Event will end on July 6th.</li></ul><b>https://discord.gg/TweEyUH discord for more information about the update.</b></p>",
+    "showAtStartup":true,
+    "newsKey":"ahVzfnJlYWxtb2Z0aGVtYWRnb2RocmRyFwsSCkluR2FtZU5ld3MYgICwzYKp5wsM",
+    "platform":"kongregate,steam,rotmg",
+    "startTime":1493251200000
+  }
+
+]

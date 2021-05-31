@@ -1,0 +1,75 @@
+{
+  "data": "eNq9l41ygyAMgC24omCH7fb+zzojIAmggOia64nCfcb8Ebou+j1OSMnv0bGOr8I26Ze7r0Wey8g/hTXP5VrDFYg7bFy+jEbENava9DVC9ZXVXBlw1UqdIjvwBjsAd0pyX0Vc5122fbMXw1Xkmdf3OCq+t/XSajctpMle3RP/jJP3H3NFp0+IiLg0vvtTVJA+yhVGPAFreFJyM5gDXDMnd9fQN+7PYIrhinUsCHco4o6E6znAlZlvmiPunLUdtS9EKebm7Iu5NGNCrgq4LgPgDmbMKhflmKsOuVPEfa+i17+2I5C+St8UNxWt7yJ9xww3jCx9qO9oubS6YK9zZFXK1StvDrhefF64ikK9zjZ9cQzoIFoMV6FaBFyzv+A1ocTcWDwBeDXcTyWX24rdbgdF7LDnN5b1G0v47Wfzm68xqXw7H2f35cX9efxfdaelTvKb6rrbP16EO1bvQxJxSvSt2TfT+9C1+/w9fQntfa7ro0Juj3rouMvz96qi78v3qdOpPvWor07366L5HOD76rZzwD3nFmlPDi6r8DlruPicBVzZZIeU/FopPMf+AQlsJPs=",
+  "dict": [
+    {},
+    {
+      "ground": "Space",
+      "objs": [ { "id": "Red Wall" } ]
+    },
+    { "ground": "12hellfoo" },
+    { "ground": "12hellfoorr" },
+    { "ground": "12LightnGround" },
+    {
+      "ground": "12hellfoorr",
+      "regions": [ { "id": "Spawn" } ]
+    },
+    {
+      "ground": "12hellfoorr",
+      "objs": [ { "id": "Abyss Bones" } ]
+    },
+    {
+      "ground": "12hellfoorr",
+      "objs": [ { "id": "Red Pillar" } ]
+    },
+    {
+      "ground": "12hellfoo",
+      "objs": [ { "id": "Broken Red Pillar" } ]
+    },
+    {
+      "ground": "12hellfoo",
+      "objs": [ { "id": "Red Pillar" } ]
+    },
+    {
+      "ground": "12hellfoorr",
+      "objs": [
+        {
+          "id": "Abyss Bones",
+          "name": "size:85"
+        }
+      ]
+    },
+    {
+      "ground": "Lava Blend",
+      "objs": [ { "id": "Partial Red Floor" } ]
+    },
+    { "ground": "Lava Blend" },
+    {
+      "ground": "12hellfoorr",
+      "objs": [ { "id": "Broken Red Pillar" } ]
+    },
+    {
+      "ground": "Red Small Checks",
+      "objs": [ { "id": "Red Wall" } ]
+    },
+    {
+      "ground": "Lava",
+      "objs": [ { "id": "Partial Red Floor" } ]
+    },
+    {
+      "ground": "12hellfoo",
+      "objs": [ { "id": "White Demon of the Abyss" } ]
+    },
+    { "ground": "Lava" },
+    {
+      "ground": "12hellfoorr",
+      "objs": [ { "id": "Archdemon Malphas" } ]
+    },
+    {
+      "ground": "12LightnGround",
+      "objs": [ { "id": "Abyss Bones" } ]
+    },
+    { "objs": [ { "id": "Red Wall" } ] }
+  ],
+  "width": 44,
+  "height": 44
+}

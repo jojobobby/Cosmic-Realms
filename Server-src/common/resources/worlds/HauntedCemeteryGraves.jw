@@ -1,0 +1,12 @@
+﻿{
+	"name":"Haunted Cemetery Graves",
+	"sbName":"Haunted Cemetery Graves",
+	"isLimbo":false,
+	"persist":false,
+	"difficulty":-1,
+	"background":0,
+	"blocking":0,
+	"showDisplays":true,
+	"portals":[24358],
+	"maps":["HauntedCemeteryGraves.jm"]
+}

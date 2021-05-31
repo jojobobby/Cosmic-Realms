@@ -1,0 +1,11 @@
+﻿{
+  "name": "Belladonna's Garden",
+  "sbName": "Belladonna's Garden",
+  "isLimbo": false,
+  "difficulty": -1,
+  "background": 0,
+  "showDisplays": true,
+  "portals": [ 8849 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "BelladonnasGarden.wmap" ]
+}

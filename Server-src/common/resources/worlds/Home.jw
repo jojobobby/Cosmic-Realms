@@ -1,0 +1,13 @@
+{
+  "id": 0,
+  "isLimbo": false,
+  "name": "Home",
+  "sbName": "Home",
+  "difficulty": 0,
+  "background": 0,
+  "blocking": 1,
+  "restrictTp": false,
+  "showDisplays": false,
+  "portals": [  ],
+  "maps": [ "Home.jm" ]
+}

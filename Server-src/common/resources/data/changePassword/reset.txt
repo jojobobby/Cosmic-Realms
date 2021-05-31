@@ -1,0 +1,9 @@
+Hello,
+
+Your new password is: {PASSWORD}
+
+Passwords are CaSe-SeNsItIvE!
+
+You can change your password using the 'account' link on the title screen.
+
+- Tidan Realms

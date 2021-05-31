@@ -1,0 +1,10 @@
+﻿{
+	"name":"Master Zemith's Hideout",
+	"sbName":"Master Zemith's Hideout",
+	"difficulty":-1,
+	"background":0,
+	"blocking":1,
+	"restrictTp":false,
+	"showDisplays":true,
+	"maps":["MagmaCastle.jm"]
+}

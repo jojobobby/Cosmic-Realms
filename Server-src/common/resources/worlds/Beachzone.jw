@@ -1,0 +1,11 @@
+﻿{
+	"name":"Beachzone",
+	"sbName":"Beachzone",
+	"isLimbo":false,
+	"difficulty":-1,
+	"background":0,
+	"showDisplays":true,
+  "portals": [ 1858 ],
+  "music": [ "https://jsl.ijjiii.is/f048568b2c62b2e879646375bc16c4b8/8pJV2hiI6r0/riwuwcsowmm" ],
+	"maps":["Beachzone.wmap"]
+}

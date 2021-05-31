@@ -1,0 +1,14 @@
+{
+  "id": 0,
+  "isLimbo": false,
+  "name": "Deep Sea",
+  "sbName": "Deep Sea",
+  "difficulty": 5,
+  "background": 0,
+  "blocking": 1,
+  "restrictTp": false,
+  "showDisplays": false,
+  "portals": [ 0x5421 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "DeepSea.jm" ]
+}

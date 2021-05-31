@@ -1,0 +1,12 @@
+﻿{
+	"name":"Haunted Cemetery Gates",
+	"sbName":"Haunted Cemetery Gates",
+	"isLimbo":false,
+	"persist":false,
+	"difficulty":-1,
+	"background":0,
+	"blocking":0,
+	"showDisplays":true,
+	"portals":[24357],
+	"maps":["HauntedCemeteryGates.jm"]
+}

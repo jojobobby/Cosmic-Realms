@@ -1,0 +1,1755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2361688D-6D1E-4A29-9D42-A7C384F76012}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>common</RootNamespace>
+    <AssemblyName>common</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DiscordWebhook, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscordWebhooks.1.0.4\lib\DiscordWebhook.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.7.2\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.Mono.1.0.0\lib\StackExchange.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zlib.Portable, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zlib.Portable.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigModels.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DbModels.cs" />
+    <Compile Include="DbStatus.cs" />
+    <Compile Include="FameStats.cs" />
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="InterServerChannel.cs" />
+    <Compile Include="ISManager.cs" />
+    <Compile Include="ISDataTypes.cs" />
+    <Compile Include="NReader.cs" />
+    <Compile Include="NWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resources\ChangePassword.cs" />
+    <Compile Include="resources\MonthCalendarUtils.cs" />
+    <Compile Include="resources\MysteryBoxes.cs" />
+    <Compile Include="resources\Packages.cs" />
+    <Compile Include="resources\PrivateMessages.cs" />
+    <Compile Include="resources\Ranks.cs" />
+    <Compile Include="resources\Tinker.cs" />
+    <Compile Include="resources\WorldData.cs" />
+    <Compile Include="resources\XmlDescriptors.Pets.cs" />
+    <Compile Include="terrain\Json2Wmap.cs" />
+    <Compile Include="terrain\TerrainTile.cs" />
+    <Compile Include="terrain\WorldMapExporter.cs" />
+    <Compile Include="TimedLock.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WeakDictionary.cs" />
+    <Compile Include="resources\Resources.cs" />
+    <Compile Include="resources\AppSettings.cs" />
+    <Compile Include="resources\XmlDescriptors.cs" />
+    <Compile Include="resources\XmlData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="resources\data\filterList.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\inGameNews.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\init.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\loginRewards.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\mysteryBoxes.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\news.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\packages.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\roles.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\changePassword\request.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\changePassword\reset.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\changePassword\reset.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\changePassword\resetError.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\data\languages\en.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\22222.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\abyss.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\abyss2.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\AbyssofDemons.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\AbyssOfDemons.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\AbyssofDemonsOld.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\AdminArena.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\AdminArena.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\arena.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\arena2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\arena3.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\arena4.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\arena5.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\arena6.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\arena7.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\BattlefortheNexus.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\BattlefortheNexus.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Bazaar.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\bazzar.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\bazzar.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Beachzone.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Beachzone.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\BelladonnasGarden.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\BelladonnasGarden.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Bilgewater Grotto.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\BilgewaterGrotto.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\BlockTestWorld.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Bloody Consealment.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Bloody Consealment.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CandylandHuntingGrounds.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CandylandHuntingGrounds.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CaveOfAThousandTreasures.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CaveOfAThousandTreasures.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CaveOfThousandTreasures.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CnidarianReef.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\corrupted_residency.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CourtofOryx.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CourtofOryx.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CrownguardCastle.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CrownguardCastle.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CyberiousCastle.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CyberiousCastle.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CyberiousCastle2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\DeadWaterdocksOld.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\DeathArena.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\DeepCellar.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\DeepCellar.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\epicsprite.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\epicsprite.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Epicudl.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\EpicUDL.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\FrozenDepths.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\FrozenDepths.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ivory.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\IvoryWyvernOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\LairofDraconis.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\LairofDraconis.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\MadLabOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\MagmaCastle.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\MagmaCastle.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\manor.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ManoroftheImmortalsOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Moon.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Moon.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Nexus4.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\O3NewMap.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\OceanTrenchOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Oryx3.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PuppetMasterEncore.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PuppetMastersTheatreOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PuppetMastersTheatreOLD2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\RainbowRoad.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\RainbowRoad.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\shrek.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\shreks.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\snakepit.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SnakePitOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Spectre%27sLair2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\spriteworld1.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\spriteworld2.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\spriteworld3.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\spriteworld4.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\spriteworld5.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_RaidNexusFixer.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_RaidNexusFixer.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_RaidSpawner.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Beroth.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Beroth.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_BloodyTissue2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ivory.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\IvoryWyvernOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\MadLabOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\manor.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ManoroftheImmortalsOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Nexus4.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\OceanTrenchOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Oryx3.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PuppetMastersTheatreOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PuppetMastersTheatreOLD2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\snakepit.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SnakePitOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Spectre%27sLair2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\spriteworld1.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\spriteworld2.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\spriteworld3.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\spriteworld4.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\spriteworld5.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_BloodyTissue2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_CandyMan.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_CandyMan.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_CultistEvent.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_CultistEvent.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Merchant.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Merchant.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Keyper.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Keyper.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Krystal.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Krystal.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_LCubeGod.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_LCubeGod.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_LSphinx.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_LSphinx.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MEternal.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MEternal.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MJadeRabbit.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MJadeRabbit.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MLotll.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MLotll.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MysteriousScorpion.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MysteriousScorpion.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_RedDemon.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_RedDemon.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_ShallowWater.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_ShallowWater.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Toad.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CrystalCove.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CrystalCove.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CultistHideout.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\CultistHideout.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\DavyJonesLocker.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\DavyJonesLocker.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\DeadWaterdocks.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\DeadWaterdocks.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\DeepSea.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\DeepSea.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\EpicManoroftheImmortals.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\EpicManoroftheImmortals.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ForbiddenJungle.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ForbiddenJungle.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ForestMaze.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ForestMaze.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ForestMaze.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ForgottenGarden.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ForgottenGarden.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Foundry.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Foundry.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\GuildHall0.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\GuildHall1.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\GuildHall2.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\GuildHall3.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\GuildHall.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\HauntedCemetery.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\HauntedCemetery.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\HauntedCemeteryFinalBattle.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\HauntedCemeteryFinalBattle.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\HauntedCemeteryGates.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\HauntedCemeteryGates.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\HauntedCemeteryGraves.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\HauntedCemeteryGraves.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Home.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Home.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\IceCave.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\IceCave.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\IceTomb.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\IceTomb.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\InnerSanctum.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\InnerSanctum.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\IvoryWyvern.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\IvoryWyvern.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\LairofShaitan.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\LairofShaitan.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\LostHalls.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\LostHalls.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\LuminousCaverns.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\MadLab.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\MadLab.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\maks.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ManoroftheImmortals.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ManoroftheImmortals.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\map.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\MountainTemple.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\MountainTemple.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\newNexus.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Nexus2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\OceanTrench.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\OceanTrench.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\OceanTrench.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Omen.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Omen.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\OryxBasement.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\OryxChamber.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\OryxChamber.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PetYard_Common.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PetYard_Divine.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PetYard_Legendary.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PetYard_Rare.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PetYard_Uncommon.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PirateCave.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PirateCave.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PirateCave.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PuppetMastersEncore.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PuppetMastersEncore.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PuppetMastersTheatre.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PuppetMastersTheatre.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PuppetMasterTheatre.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SilentWilderness.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SilentWilderness.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Spectre%27sLair.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Spectre%27sLair.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SpiderDen.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Belladonna.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Belladonna.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_BifftheBuffedBunny.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_BifftheBuffedBunny.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_BloodyTissue.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_BloodyTissue.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_CandyGnome.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_CandyGnome.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Cultist.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Cultist.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_FERAL.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_FERAL.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_FountainCastle.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_FountainCastle.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_FountainCastleTwo.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_FountainCastleTwo.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_HolyCross.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_HolyCross.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_LostSentry.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_LostSentry.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Lotll.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Lotll.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MShip.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MShip.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MysteriousCrystal.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_MysteriousCrystal.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Pentaract.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Pentaract.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Primaeval.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Primaeval.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_QueenBee.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_QueenBee.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Raijin.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Raijin.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Skuld.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Skuld.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_SpectreEvent.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_SpectreEvent.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Toad.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Void1.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Void1.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Void2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Void2.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Void3.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Void3.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Testnexus.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\PetYard.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TheIvoryWyvern.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TheShatters.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SnakePit.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SnakePit.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Spawners.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Spawners.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SpiderDen.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SpiderDen.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_JanustheDoorwarden.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_JanustheDoorwarden.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_PentaractTowerUltra.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_PentaractTowerUltra.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Permafrost.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Permafrost.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Test.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TheCrawlingDepths.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TheCrawlingDepths.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TheHive.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TheHive.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TheInnerSanctum.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TheShatters.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TheVoid.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TheVoid.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\tidi_map_41.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TomboftheAncients.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TombOfTheAncients.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL1.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL10.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL11.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL12.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL13.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL14.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL15.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL16.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL17.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL18.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL19.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL20.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL21.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL22.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL23.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL24.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL25.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL26.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL27.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL28.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL29.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL3.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL30.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL4.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL5.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL6.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL7.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL8.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UDL9.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UndeadLair.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ToxicSewers.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\ToxicSewers.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TrueLH.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\TrueLH.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UndeadLair.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\UndeadLairOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\VargoCastle.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\VargoCastle.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\void.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Walmart.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Walmart.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Walmart2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Walmart2.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Walmart3.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Walmart3.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Walmart4.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Walmart4.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\WineCellar.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\WineCellar.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\WineCellar.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\WineCellar2.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\WoodlandLabyrinth.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\WoodlandLabyrinth.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\WoodlandLabyrinthOLD.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\WorldBuilder.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_CraftingCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_ItemsCXML.dat">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_summerNexusGroundCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_summerNexusObjectCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_VoidCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_BloodyConcealment.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_AlliesCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_BelladonnaCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_buffedBunnyObjectCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_CandyLandCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_CaveOfAThousandTreasuresCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_ContainersCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_CustomObjectsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_DyesCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_EncountersCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_EpicForestMazeCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_EpicPirateCaveCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_EpicSpiderDenCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_EquipCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_EquipmentSetsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_ForbiddenJungleCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_ForestMazeCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_GhostShipCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_GroundCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_hanaminexusGroundCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_hanaminexusObjectCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_HauntedCemeteryCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_HeroesCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_HighCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_IceCaveCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_IceTombCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_KTestingCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_LairOfDraconisCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_LairOfShaitanCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_LowCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_MadLabCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_ManorOfTheImmortalsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_MidCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_MiniDungeonHubCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_MountainsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_mountainTempleGroundCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_mountainTempleObjectCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_MTestingCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_NexusDestroyedCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_NPCsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_ObjectsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_OceanTrenchCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_OryxCastleCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_OryxChamberCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_OryxChickenChamberCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_OryxWineCellarCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_PermapetsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_PetsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_PirateCaveCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_PlayersCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_PlayersZombiesCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_PortalsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_ProjectilesCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_PuppetMasterCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_PuppetMasterEncoreCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_RegionsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_ShattersCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_ShoreCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_SkinsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_SnakePitCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_SpiderDenCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_SpriteWorldCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_StaticObjectsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_STestingCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_stPatricksGroundCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_stPatricksObjectCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_TestingObjectsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_TextilesCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_TheHiveCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_TokenCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_TombOfTheAncientsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_ToxicSewersCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_TTestingCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_TutorialMonstersCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_TutorialObjectsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_TutorialScriptCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_UndeadLairCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_WillemTestingCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_AbyssOfDemonsCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\xmls\EmbeddedData_SilentWildernessCXML.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\web\crossdomain.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\web\expressInstall.swf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\web\favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\web\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\web\rotmg.swf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\web\music\sorc.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\web\sfx\arrowShoot.mp3" />
+    <None Include="resources\web\sfx\bladeSwing.mp3" />
+    <None Include="resources\web\sfx\button_click.mp3" />
+    <None Include="resources\web\sfx\daggerSwing.mp3" />
+    <None Include="resources\web\sfx\death_screen.mp3" />
+    <None Include="resources\web\sfx\enter_realm.mp3" />
+    <None Include="resources\web\sfx\error.mp3" />
+    <None Include="resources\web\sfx\inventory_move_item.mp3" />
+    <None Include="resources\web\sfx\level_up.mp3" />
+    <None Include="resources\web\sfx\loot_appears.mp3" />
+    <None Include="resources\web\sfx\magicShoot.mp3" />
+    <None Include="resources\web\sfx\no_mana.mp3" />
+    <None Include="resources\web\sfx\use_key.mp3" />
+    <None Include="resources\web\sfx\use_potion.mp3" />
+    <None Include="resources\web\sfx\monster\abyss_brutes_death.mp3" />
+    <None Include="resources\web\sfx\monster\abyss_brutes_hit.mp3" />
+    <None Include="resources\web\sfx\monster\abyss_demons_death.mp3" />
+    <None Include="resources\web\sfx\monster\abyss_demons_hit.mp3" />
+    <None Include="resources\web\sfx\monster\bats_death.mp3" />
+    <None Include="resources\web\sfx\monster\bats_hit.mp3" />
+    <None Include="resources\web\sfx\monster\beholder_death.mp3" />
+    <None Include="resources\web\sfx\monster\beholder_hit.mp3" />
+    <None Include="resources\web\sfx\monster\blobs_death.mp3" />
+    <None Include="resources\web\sfx\monster\blobs_hit.mp3" />
+    <None Include="resources\web\sfx\monster\Boshy_death.mp3" />
+    <None Include="resources\web\sfx\monster\Boshy_hit.mp3" />
+    <None Include="resources\web\sfx\monster\cave_pirates_death.mp3" />
+    <None Include="resources\web\sfx\monster\cave_pirates_hit.mp3" />
+    <None Include="resources\web\sfx\monster\chicken_death.mp3" />
+    <None Include="resources\web\sfx\monster\chicken_hit.mp3" />
+    <None Include="resources\web\sfx\monster\cubes_death.mp3" />
+    <None Include="resources\web\sfx\monster\cubes_hit.mp3" />
+    <None Include="resources\web\sfx\monster\cyclops_death.mp3" />
+    <None Include="resources\web\sfx\monster\cyclops_hit.mp3" />
+    <None Include="resources\web\sfx\monster\dark_elves_death.mp3" />
+    <None Include="resources\web\sfx\monster\dark_elves_hit.mp3" />
+    <None Include="resources\web\sfx\monster\default_death.mp3" />
+    <None Include="resources\web\sfx\monster\default_hit.mp3" />
+    <None Include="resources\web\sfx\monster\demons_death.mp3" />
+    <None Include="resources\web\sfx\monster\demons_hit.mp3" />
+    <None Include="resources\web\sfx\monster\djinn_death.mp3" />
+    <None Include="resources\web\sfx\monster\djinn_hit.mp3" />
+    <None Include="resources\web\sfx\monster\dragons_death.mp3" />
+    <None Include="resources\web\sfx\monster\dragons_hit.mp3" />
+    <None Include="resources\web\sfx\monster\dwarf_god_death.mp3" />
+    <None Include="resources\web\sfx\monster\dwarf_god_hit.mp3" />
+    <None Include="resources\web\sfx\monster\dwarves_death.mp3" />
+    <None Include="resources\web\sfx\monster\dwarves_hit.mp3" />
+    <None Include="resources\web\sfx\monster\eggs_death.mp3" />
+    <None Include="resources\web\sfx\monster\eggs_hit.mp3" />
+    <None Include="resources\web\sfx\monster\elves_death.mp3" />
+    <None Include="resources\web\sfx\monster\elves_hit.mp3" />
+    <None Include="resources\web\sfx\monster\ents_death.mp3" />
+    <None Include="resources\web\sfx\monster\ents_hit.mp3" />
+    <None Include="resources\web\sfx\monster\flaming_skulls_death.mp3" />
+    <None Include="resources\web\sfx\monster\flaming_skulls_hit.mp3" />
+    <None Include="resources\web\sfx\monster\flayers_death.mp3" />
+    <None Include="resources\web\sfx\monster\flayers_hit.mp3" />
+    <None Include="resources\web\sfx\monster\flying_brain_death.mp3" />
+    <None Include="resources\web\sfx\monster\flying_brain_hit.mp3" />
+    <None Include="resources\web\sfx\monster\ghosts_death.mp3" />
+    <None Include="resources\web\sfx\monster\ghosts_hit.mp3" />
+    <None Include="resources\web\sfx\monster\ghost_god_death.mp3" />
+    <None Include="resources\web\sfx\monster\ghost_god_hit.mp3" />
+    <None Include="resources\web\sfx\monster\goblins_death.mp3" />
+    <None Include="resources\web\sfx\monster\goblins_hit.mp3" />
+    <None Include="resources\web\sfx\monster\golems_death.mp3" />
+    <None Include="resources\web\sfx\monster\golems_hit.mp3" />
+    <None Include="resources\web\sfx\monster\greater_demons_death.mp3" />
+    <None Include="resources\web\sfx\monster\greater_demons_hit.mp3" />
+    <None Include="resources\web\sfx\monster\greater_pit_snakes_death.mp3" />
+    <None Include="resources\web\sfx\monster\greater_pit_snakes_hit.mp3" />
+    <None Include="resources\web\sfx\monster\lizard_god_death.mp3" />
+    <None Include="resources\web\sfx\monster\lizard_god_hit.mp3" />
+    <None Include="resources\web\sfx\monster\medusa_death.mp3" />
+    <None Include="resources\web\sfx\monster\medusa_hit.mp3" />
+    <None Include="resources\web\sfx\monster\megaman_hit.mp3" />
+    <None Include="resources\web\sfx\monster\minion_of_oryx_death.mp3" />
+    <None Include="resources\web\sfx\monster\minion_of_oryx_hit.mp3" />
+    <None Include="resources\web\sfx\monster\mummies_death.mp3" />
+    <None Include="resources\web\sfx\monster\mummies_hit.mp3" />
+    <None Include="resources\web\sfx\monster\night_elves_death.mp3" />
+    <None Include="resources\web\sfx\monster\night_elves_hit.mp3" />
+    <None Include="resources\web\sfx\monster\ogres_death.mp3" />
+    <None Include="resources\web\sfx\monster\ogres_hit.mp3" />
+    <None Include="resources\web\sfx\monster\orcs_death.mp3" />
+    <None Include="resources\web\sfx\monster\orcs_hit.mp3" />
+    <None Include="resources\web\sfx\monster\oryx_death.mp3" />
+    <None Include="resources\web\sfx\monster\oryx_hit.mp3" />
+    <None Include="resources\web\sfx\monster\pirates_death.mp3" />
+    <None Include="resources\web\sfx\monster\pirates_hit.mp3" />
+    <None Include="resources\web\sfx\monster\pirate_king_death.mp3" />
+    <None Include="resources\web\sfx\monster\pirate_king_hit.mp3" />
+    <None Include="resources\web\sfx\monster\pit_snakes_death.mp3" />
+    <None Include="resources\web\sfx\monster\pit_snakes_hit.mp3" />
+    <None Include="resources\web\sfx\monster\pythons_death.mp3" />
+    <None Include="resources\web\sfx\monster\pythons_hit.mp3" />
+    <None Include="resources\web\sfx\monster\rocks_death.mp3" />
+    <None Include="resources\web\sfx\monster\rocks_hit.mp3" />
+    <None Include="resources\web\sfx\monster\scorpions_death.mp3" />
+    <None Include="resources\web\sfx\monster\scorpions_hit.mp3" />
+    <None Include="resources\web\sfx\monster\skeletons_death.mp3" />
+    <None Include="resources\web\sfx\monster\skeletons_hit.mp3" />
+    <None Include="resources\web\sfx\monster\skull_shrine_death.mp3" />
+    <None Include="resources\web\sfx\monster\skull_shrine_hit.mp3" />
+    <None Include="resources\web\sfx\monster\slimes_death.mp3" />
+    <None Include="resources\web\sfx\monster\slimes_hit.mp3" />
+    <None Include="resources\web\sfx\monster\snakes_death.mp3" />
+    <None Include="resources\web\sfx\monster\snakes_hit.mp3" />
+    <None Include="resources\web\sfx\monster\snake_queen_death.mp3" />
+    <None Include="resources\web\sfx\monster\snake_queen_hit.mp3" />
+    <None Include="resources\web\sfx\monster\spiders_death.mp3" />
+    <None Include="resources\web\sfx\monster\spiders_hit.mp3" />
+    <None Include="resources\web\sfx\monster\spider_queen_death.mp3" />
+    <None Include="resources\web\sfx\monster\spider_queen_hit.mp3" />
+    <None Include="resources\web\sfx\monster\sprites_death.mp3" />
+    <None Include="resources\web\sfx\monster\sprites_hit.mp3" />
+    <None Include="resources\web\sfx\monster\sprite_god_death.mp3" />
+    <None Include="resources\web\sfx\monster\sprite_god_hit.mp3" />
+    <None Include="resources\web\sfx\monster\stone_walls_death.mp3" />
+    <None Include="resources\web\sfx\monster\stone_walls_hit.mp3" />
+    <None Include="resources\web\sfx\monster\thunder_god_death.mp3" />
+    <None Include="resources\web\sfx\monster\thunder_god_hit.mp3" />
+    <None Include="resources\web\sfx\monster\traps_death.mp3" />
+    <None Include="resources\web\sfx\monster\traps_hit.mp3" />
+    <None Include="resources\web\sfx\monster\trees_death.mp3" />
+    <None Include="resources\web\sfx\monster\trees_hit.mp3" />
+    <None Include="resources\web\sfx\monster\undead_dwarves_death.mp3" />
+    <None Include="resources\web\sfx\monster\undead_dwarves_hit.mp3" />
+    <None Include="resources\web\sfx\monster\undead_hobbits_death.mp3" />
+    <None Include="resources\web\sfx\monster\undead_hobbits_hit.mp3" />
+    <None Include="resources\web\sfx\monster\wooden_walls_death.mp3" />
+    <None Include="resources\web\sfx\monster\wooden_walls_hit.mp3" />
+    <None Include="resources\web\sfx\player\archer_death.mp3" />
+    <None Include="resources\web\sfx\player\archer_hit.mp3" />
+    <None Include="resources\web\sfx\player\knight_death.mp3" />
+    <None Include="resources\web\sfx\player\knight_hit.mp3" />
+    <None Include="resources\web\sfx\player\paladin_death.mp3" />
+    <None Include="resources\web\sfx\player\paladin_hit.mp3" />
+    <None Include="resources\web\sfx\player\priest_death.mp3" />
+    <None Include="resources\web\sfx\player\priest_hit.mp3" />
+    <None Include="resources\web\sfx\player\rogue_death.mp3" />
+    <None Include="resources\web\sfx\player\rogue_hit.mp3" />
+    <None Include="resources\web\sfx\player\warrior_death.mp3" />
+    <None Include="resources\web\sfx\player\warrior_hit.mp3" />
+    <None Include="resources\web\sfx\player\wizard_death.mp3" />
+    <None Include="resources\web\sfx\player\wizard_hit.mp3" />
+    <None Include="resources\web\sfx\spell\fire_nova.mp3" />
+    <None Include="resources\web\sfx\spell\fire_spray.mp3" />
+    <None Include="resources\web\sfx\spell\light_heal.mp3" />
+    <None Include="resources\web\sfx\spell\magic_nova.mp3" />
+    <None Include="resources\web\sfx\spell\major_heal.mp3" />
+    <None Include="resources\web\sfx\weapon\blaster.mp3" />
+    <None Include="resources\web\sfx\weapon\blunt_dagger.mp3" />
+    <None Include="resources\web\sfx\weapon\blunt_sword.mp3" />
+    <None Include="resources\web\sfx\weapon\boshy_gun.mp3" />
+    <None Include="resources\web\sfx\weapon\crossbow.mp3" />
+    <None Include="resources\web\sfx\weapon\dirk.mp3" />
+    <None Include="resources\web\sfx\weapon\double_bow.mp3" />
+    <None Include="resources\web\sfx\weapon\firework.mp3" />
+    <None Include="resources\web\sfx\weapon\fire_bow.mp3" />
+    <None Include="resources\web\sfx\weapon\fire_dagger.mp3" />
+    <None Include="resources\web\sfx\weapon\fire_sword.mp3" />
+    <None Include="resources\web\sfx\weapon\fire_wand.mp3" />
+    <None Include="resources\web\sfx\weapon\gladius.mp3" />
+    <None Include="resources\web\sfx\weapon\glass_sword.mp3" />
+    <None Include="resources\web\sfx\weapon\golden_bow.mp3" />
+    <None Include="resources\web\sfx\weapon\golden_dagger.mp3" />
+    <None Include="resources\web\sfx\weapon\golden_sword.mp3" />
+    <None Include="resources\web\sfx\weapon\heavy_crossbow.mp3" />
+    <None Include="resources\web\sfx\weapon\hells_fire_wand.mp3" />
+    <None Include="resources\web\sfx\weapon\long_sword.mp3" />
+    <None Include="resources\web\sfx\weapon\missile_wand.mp3" />
+    <None Include="resources\web\sfx\weapon\mithril_dagger.mp3" />
+    <None Include="resources\web\sfx\weapon\mithril_sword.mp3" />
+    <None Include="resources\web\sfx\weapon\obsidian_dagger.mp3" />
+    <None Include="resources\web\sfx\weapon\poison_fang_dagger.mp3" />
+    <None Include="resources\web\sfx\weapon\poor_quality_bow.mp3" />
+    <None Include="resources\web\sfx\weapon\ryu_hadouken.mp3" />
+    <None Include="resources\web\sfx\weapon\shotgun_bow.mp3" />
+    <None Include="resources\web\sfx\weapon\sprite_wand.mp3" />
+    <None Include="resources\web\sfx\weapon\wand_of_dark_magic.mp3" />
+    <None Include="resources\web\sfx\weapon\wand_of_death.mp3" />
+    <None Include="resources\web\sfx\weapon\z_saber.mp3" />
+    <None Include="resources\worlds\Nexus.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Nexus.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\OryxCastle.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\OryxCastle.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Realm.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Avatar.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Avatar.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_GhostShip.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_GhostShip.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Hermit.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Hermit.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Horde.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_Horde.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_KageKami.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_KageKami.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_RockDragon.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SP_RockDragon.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\world1.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\world2.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\world3.wmap">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Vault.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\Vault.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SpriteWorld.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\worlds\SpriteWorld.jw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbSchema.txt" />
+    <Content Include="resources\web\sfx\spell\thunder.mp3" />
+    <None Include="resources\worlds\SP_RaidSpawner.jm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties resources_4worlds_4deatharena_1jw__JsonSchema="https://gitpod.io/schemas/gitpod-schema.json" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

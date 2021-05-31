@@ -1,0 +1,12 @@
+{
+  "height": 5,
+  "data": "eNpjYEACjGCIiwUFAAETAAo=",
+  "dict": [
+    { "ground": "1 Crystalized Switch Ground" },
+    {
+      "ground": "1 Crystalized Ground",
+      "regions": [ { "id": "Store 5" } ]
+    }
+  ],
+  "width": 5
+}

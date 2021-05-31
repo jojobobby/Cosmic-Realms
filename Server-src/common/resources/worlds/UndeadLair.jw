@@ -1,0 +1,12 @@
+﻿{
+  "name": "Undead Lair",
+  "sbName": "Undead Lair",
+	"isLimbo":false,
+	"difficulty":-1,
+	"background":0,
+	"blocking":1,
+	"showDisplays":true,
+	"portals":[0x071a],
+  "maps": [ "UDL2.jm" ],
+   "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ]
+}

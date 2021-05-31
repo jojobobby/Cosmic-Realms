@@ -1,0 +1,13 @@
+﻿{
+  "name": "ClothBazaar",
+  "sbName": "ClothBazaar",
+  "isLimbo": false,
+  "persist": true,
+  "difficulty": -1,
+  "background": 0,
+  "blocking": 1,
+  "showDisplays": true,
+  "portals": [ 0x0750 ],
+  "music": [ "https://iil.ijjiii.is/d409da11234ce70ff036712a037a365d/Thz-aFRbroU/riwuwcsowmm" ],
+  "maps": [ "Bazaar.jm" ]
+}

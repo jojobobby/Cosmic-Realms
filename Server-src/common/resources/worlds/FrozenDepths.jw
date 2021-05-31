@@ -1,0 +1,14 @@
+{
+  "id": 0,
+  "isLimbo": false,
+  "name": "FrozenDepths",
+  "sbName": "FrozenDepths",
+  "difficulty": 2,
+  "background": 0,
+  "blocking": 1,
+  "restrictTp": false,
+  "showDisplays": false,
+  "portals": [ 0x2934 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+  "maps": [ "FrozenDepths.jm" ]
+}

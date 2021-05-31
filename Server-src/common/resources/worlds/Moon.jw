@@ -1,0 +1,14 @@
+﻿{
+  "id": "2",
+  "name": "Moon",
+  "sbName": "Moon",
+  "isLimbo": false,
+  "persist": true,
+  "difficulty": -1,
+  "background": 0,
+  "blocking": 1,
+  "showDisplays": true,
+  "portals": [ 0x4312 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Moon.mp3" ],
+  "maps": [ "Moon.jm" ]
+}

@@ -1,0 +1,12 @@
+﻿{
+	"name":"The Shatters",
+	"sbName":"The Shatters",
+	"isLimbo":false,
+	"difficulty":-1,
+	"background":0,
+	"showDisplays":true,
+	"blocking":1,
+  "portals": [ 29310 ],
+  "music": [ "https://github.com/GhostRealm/GhostRealm.github.io/raw/master/music/Dungeon.mp3" ],
+	"maps":["TheShatters.jm"]
+}

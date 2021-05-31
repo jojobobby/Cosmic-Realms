@@ -1,0 +1,111 @@
+{
+  "dict": [
+    {},
+    { "objs": [ { "id": "1Factory Wall1" } ] },
+    { "ground": "1Factoryb1" },
+    { "ground": "1Factorya1" },
+    {
+      "ground": "1Factorya1",
+      "objs": [ { "id": "Big Candle" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Big Candle" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Small Candle" } ]
+    },
+    {
+      "ground": "1Factorya1",
+      "objs": [ { "id": "Pool of Blood" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Pool of Blood" } ]
+    },
+    {
+      "ground": "1Factorya1",
+      "objs": [ { "id": "Small Candle" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Temple Candle Stand" } ]
+    },
+    {
+      "ground": "1Factorya1",
+      "objs": [ { "id": "Puppet Tools" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "regions": [ { "id": "Spawn" } ]
+    },
+    {
+      "ground": "1Factorya1",
+      "regions": [ { "id": "Spawn" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Arena Spell Table" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "1Factory Wall1" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Weapon Rack" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Puppet Tools" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Dragon Candelabra" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Katana Stand" } ]
+    },
+    {
+      "ground": "1Factorya1",
+      "objs": [ { "id": "Holloween Gravestone" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Treasure Chests" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Armor Stand" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "Treasure Pile" } ]
+    },
+    {
+      "ground": "1Factorya1",
+      "objs": [ { "id": "Treasure Chests" } ]
+    },
+    {
+      "ground": "1Factoryb1",
+      "objs": [ { "id": "lod Abnormal Treasure Pile" } ]
+    },
+    {
+      "ground": "1Factorya1",
+      "objs": [ { "id": "Treasure Pile" } ]
+    },
+    {
+      "ground": "1Factorya1",
+      "objs": [ { "id": "1Factory Wall1" } ]
+    },
+    {
+      "ground": "1Factorya1",
+      "objs": [ { "id": "lod Abnormal Treasure Pile" } ]
+    }
+  ],
+  "height": 93,
+  "data": "eNrVW4l22yAQ9LCJkrhNFKd1naP//53VYdmwBwIqWcQ86/mSNCzD7uyCd7uNH/Aaf1fLw0flzk17VwPuHgHt7rqni7T77vu+bY0XAwodY8Pej3i3RjsiuSLy8T1cXo3HGtA2F0Qk7Ol/tj1aF1hVR0vBjNtyjjmBr7nglozeFq1v2ZDBPltD69aAVs4x/5O60EqElmerhbePwptdj00FvLWsa7dtsSKwnG3bOnzC/bfi7ff0Cd/D32qxzFUay0p0Qg2KcUL2VLkGi+nbB+HN6s0dXIW5A9ict5HeVZJH8pw3zMlqz9U5ypofqMJbpdvXt23tdt2f0e4rty+Y/y2rzkC0NRlLl5bPXlx8ou+j10EMFrtyoxfMXOSKF2YrGcMf/8EEsHiiKQwsmEOB6dsSyxLjPnn9TrH+bTzYdYY2QbZMZw8DMYtDnVfCCBSPTqg+SalYkpqZhro0j83wroAijzIef+6eu6eNjnOGCvgxMaHE8yCw4PPQXEThaRkrCd7H0e69X+6L0M7bNgV7Gtqw+oFVeKtVAzhv9wkI+B3X9gn+qPvzCklK8Bb+lowRhzrKSPRfrtArzMUybda9iDvloS3VNEvphDkmhLkZFcXD5TRYHC127e5VzNBDwZ2W0bdxJiBSYb59BoEktMTWS/vfv94cLzy/b6M9mDEdq6ODUdnIY8L6aNuu5bKQ9wgJ47GMXVs1VtPMjIHoEYo9Wf7c19RuWmRAxNpL44ah0TBjWYn2Fh4NQtXMWwWBOtXQ+nF/ebTaVW3Uvnq6svbFUMxLWNfaewQl9mr6jHMbCt50bRYf0bFyIfU5BfrHGk2ovpVn62+JaBH0VEM9Yo2vFvRnNKp3sKIH3892ZUs8GpGoUTmWGZCRoRPzSDloLW8DY/Vi6st0n0bkIgiw0mX8SfzGihJIRksGWjJrBnOvOH4/U9LuxhU/Zqu78nyKZtwkbMl5CiU/Hl/96l61wd0O3h3eZnVEI9BO134ssC0JTyZt22bkYlLFSbTcv+m7MUgddwQWv/7mReEtWKYa57SmcaBU3NJ9Aik98u/7m8WAmO/XsGpzzIm4giCzg9nDuL+VEUvuBkVUo4P1Bqpumo9lpKwbzMUyqHt9dua3MC2fpyFGvH62CLZyAJVBsoYGI55I22kzPVUDh/mJxhZL54xnPCqZDldm0upPmao/v4I0X0Vws37tqNS0x0+Oi9g2hnbPxjTkxsGsqkkm5FqKTG8jz/ij3EuP5vG69Hg8dc/3ZLQNi8ku2bZO8eexed5/9tGNeRvYth0QYzXbOpV7LiGfw4CsR/s5nPE5oD0msrYMLQp3qU0e4+usO9qBBV8ZPhdi/YmS1seoYCcoBoaeOnx/B5u2w1W+Bhu7VdHasSx23rHDdTrbtB//kRcf3bVOK/HWV7dTe01GSwMHvs6+oLdze7Z4GdommX+51XsM1hw51Pusj4EB7xmxDMrqHDL6mBM1p16euvZ58bOnAmWjryVaKymIqtf5Xo5MPQ22/chWCZptuaL35xMKa3JYYNcJ96CT/Q5G/U3WPW+9HiL1M5R/jpGiCbZZvaHImjpF9oZvsVtNX8EkJVOv4/9Y/r7a+P7aWv87ptv2Gr+237d8mOVtPbts9dU9l6HWt8LtTH9bI9qxLl7TP7BKImXh4x+knCB4",
+  "width": 87
+}
