@@ -22,7 +22,7 @@ Features:
 
 -And A buncha cool tiny features
 
--/Events (Public Events 
+-/Events (Public Events)
 
 Speical Thanks to:
 ------------------------------------------		
