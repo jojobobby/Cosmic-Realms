@@ -22,23 +22,24 @@ Features:
 
 -And A buncha cool tiny features
 
+-/Events (Public Events 
 
 Speical Thanks to:
 ------------------------------------------		
 
 -Demon / 09 : Development
 
--Tidan : Development
-
 -xDelik : Development
 
--Ghostmaree : Development
+-Tidan : Development
+
+-Ghostmaree : Development Help
 
 -Keathiz : Development Help
 
--Maks/Majster -_- : Development
+-Maks/Majster -_- : Development Help
 
--Yamano : Artwork/Development
+-Yamano : Artwork/Development Help
 
 -TehEnd : Artwork
 
