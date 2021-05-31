@@ -208,6 +208,7 @@ public class Parameters {
         setDefault("showDmgDone", true);
         setDefault("textOutline", true);//showDmgDone
         setDefault("SuperGlow", true);
+        setDefault("ScaleChat", 1);
         setDefault("rarityBackground", true);
         setDefault("rarityBag", true);
         setDefault("ItemRarityGlow", true);
