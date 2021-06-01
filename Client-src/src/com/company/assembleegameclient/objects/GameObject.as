@@ -914,8 +914,8 @@ import kabam.rotmg.messaging.impl.incoming.Damage;
                         }
                         else {
                             switch (_local8) {
-                               // case ConditionEffect.NOTHING:
-                                 //   break;
+                                    // case ConditionEffect.NOTHING:
+                                    //   break;
                                 case ConditionEffect.QUIET:
                                 case ConditionEffect.WEAK:
                                 case ConditionEffect.SICK:
@@ -1040,56 +1040,77 @@ import kabam.rotmg.messaging.impl.incoming.Damage;
                     }
                 }
             }
-            if(!_arg1 && (Parameters.data_.noEnemyDamage && this.props_.isEnemy_ || Parameters.data_.noAllyDamage && this.props_.isPlayer_)) {
+            if(!_arg1
+                    && (Parameters.data_.noEnemyDamage && this.props_.isEnemy_
+                            || Parameters.data_.noAllyDamage && this.props_.isPlayer_)) {
                 return;
             }
             if (_arg2 > 0) {
                 _local15 = ((((this.isArmorBroken()) || (((!((_arg5 == null))) && (_arg5.projProps_.armorPiercing_))))) || (_local6));
-                if(_arg5._isCrit > 1) { // if the projectile crit multiplier is greater than 1 display crit dmg
-                    this.showDamageText2(_arg2, _local15, _arg5);
-                    return;
+                this.showDamageText(_arg2, _local15, _arg5);
+            }
+        }
+
+        public function statusTextMod(param1:int, param2:Boolean, arg1:Projectile = null) : void
+        {
+            if (arg1 == null) {
+                var _loc5_:int = this.hp_ - param1;
+                _loc5_ = _loc5_ < 0?0:int(int(_loc5_));
+                var _loc7_:String = "";
+
+                if (this.props_.isEnemy_) {
+                    _loc7_ = ("-" + param1 +" HP: "+ _loc5_ + " (x1.00)");
+                } else {
+                    _loc7_ = ("-" + param1 );
                 }
-                this.showDamageText(_arg2, _local15);
+
+                var _loc8_:CharacterStatusText = new CharacterStatusText(this, param2 ? 9437439 : 0xFFD700, 1000);
+
+                _loc8_.setStringBuilder(new StaticStringBuilder(_loc7_));
+                map_.mapOverlay_.addStatusText(_loc8_);
+                return;
             }
+            if (arg1 != null && arg1._isCrit > 1) {
+
+                var CritMultiplied:Number = arg1._isCrit;
+                var Amount = param1 * CritMultiplied;
+                var CritValue = CritMultiplied.toFixed(2);
+                var TrueAmount = Amount.toFixed(0);
+                var _loc5_:int = this.hp_ - param1;
+                if (this.props_.isEnemy_) {
+                    var _loc7_:String = ("-" + TrueAmount + " HP: "+ _loc5_ + " (x" + CritValue + ")"); //remove all the other stuff for optimization
+                } else {
+                    var _loc7_:String = ("-" + param1 );
+                }
+
+                var _loc8_:CharacterStatusText = new CharacterStatusText(this, param2 ? 9437439 : 0xF89232, 1250);
+
+                _loc8_.setStringBuilder(new StaticStringBuilder(_loc7_));
+                map_.mapOverlay_.addStatusText(_loc8_);
+                return;
+
+            }else {
+                var _loc50_:int = this.hp_ - param1;
+                _loc50_ = _loc50_ < 0?0:int(int(_loc50_));
+                var _loc70_:String = "";
+
+                if (this.props_.isEnemy_) {
+                    _loc70_ = ("-" + param1 +" HP: "+ _loc50_ + " (x1.00)");
+                } else {
+                    _loc70_ = ("-" + param1 );
+                }
+                var _loc80_:CharacterStatusText = new CharacterStatusText(this, param2 ? 9437439 : 0xFFD700, 1000);
+                _loc80_.setStringBuilder(new StaticStringBuilder(_loc70_));
+                map_.mapOverlay_.addStatusText(_loc80_);
+                return;
+            }
+
         }
 
-        public function showDamageText2(dmg:int, pierced:Boolean, arg1:Projectile):void { //Best to rewrite this, could causes lag on damage display.
-            var CritMultiplied:Number = arg1._isCrit;
-            var CritValue = CritMultiplied.toFixed(2);
-            var Amount = dmg * CritMultiplied;
-            var TrueAmount = Amount.toFixed(0);
-            var _loc5_:int = this.hp_ - dmg;
-            if (this.props_.isEnemy_) {
-                var _loc7_:String = ("-" + TrueAmount + " HP: "+ _loc5_ + " (x" + CritValue + ")"); //remove all the other stuff for optimization
-            } else {
-                var _loc7_:String = ("-" + dmg );
-            }
 
-
-            var _loc8_:CharacterStatusText = new CharacterStatusText(this, pierced ? 9437439 : 0xF89232, 1250);
-
-            _loc8_.setStringBuilder(new StaticStringBuilder(_loc7_));
-            map_.mapOverlay_.addStatusText(_loc8_);
-        }
-
-        public function statusTextMod(param1:int, param2:Boolean) : void
+        public function showDamageText(param1:int, param2:Boolean, arg1:Projectile = null) : void
         {
-            var _loc5_:int = this.hp_ - param1;
-            if (this.props_.isEnemy_) {
-                var _loc7_:String = ("-" + param1 +" HP: "+ _loc5_ + " (x1.00)");
-            } else {
-                var _loc7_:String = ("-" + param1 );
-            }
-
-            var _loc8_:CharacterStatusText = new CharacterStatusText(this, param2 ? 9437439 : 0xFFD700, 1000);
-
-            _loc8_.setStringBuilder(new StaticStringBuilder(_loc7_));
-            map_.mapOverlay_.addStatusText(_loc8_);
-        }
-
-        public function showDamageText(param1:int, param2:Boolean) : void
-        {
-            this.statusTextMod(param1,param2);
+            this.statusTextMod(param1,param2, arg1);
         }
 
         public function showConditionEffect(time:int, name:String):void

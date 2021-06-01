@@ -119,7 +119,7 @@ import flash.display.BitmapData;
 
         public var _isCrit:Number = 1;
 
-        public function setDamage(_arg1:int, _arg2:Number = 1.0):void {
+        public function setDamage(_arg1:int, _arg2:Number = 1):void {
             this._isCrit = _arg2;
             this.damage_ = _arg1;
         }
