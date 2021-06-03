@@ -161,7 +161,7 @@ namespace common
 
         public static byte[] SHA1(string val)
         {
-            SHA1Managed sha1 = new SHA1Managed();
+            SHA384 sha1 = new SHA384Managed();
             return sha1.ComputeHash(Encoding.UTF8.GetBytes(val));
         }
 
