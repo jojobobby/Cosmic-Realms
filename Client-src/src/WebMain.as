@@ -134,6 +134,9 @@ public class WebMain extends Sprite {
             Parameters.data_.fpsMode = "60";
         }
         stage.frameRate = 60;
+        if (Parameters.data_.GPURender == true) {
+            Parameters.data_.GPURender = false;
+        }
     }
 
     private function setEnvironment():void {
