@@ -1097,7 +1097,7 @@ namespace wServer.realm.commands
             var acc = player.Manager.Database.GetAccount(player.AccountId);
             player.SendInfo("Currently have:[" + acc.TQamount + "] Realm TQs left.");
             player.SendInfo("Currently have:[" + acc.TQMamount + "] Moon TQs left.");
-            player.SendInfo("Currently have:[" + acc.TQDamount + "] dungeon TQs left.");
+            player.SendInfo("Currently have:[" + acc.TQDamount + "] Dungeon TQs left.");
             return true;
 
 
