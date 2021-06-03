@@ -132,7 +132,9 @@ public class WebMain extends Sprite {
         if (Parameters.data_.fpsMode == undefined) {
             Parameters.data_.fpsMode = "60";
         }
-        Parameters.data_.GPURender = false;
+        if (Parameters.data_.GPURender == true) {
+            Parameters.data_.GPURender = false;
+        }
         stage.frameRate = 60;
     }
 
