@@ -1069,12 +1069,14 @@ public class Player extends Character {
         var abType:int = equipment_[1];
         criticalMultiplier_ = 1.0;
 
-        if (abType == 0x7a47) {
+        if (abType == 0x7a47 && this.wisdom_ >= 30) {
             criticalMultiplier_ = (this.wisdom_ / 100.0) + 1.0;
         }
+
         if (weapType == -1) {
             return criticalMultiplier_;
         }
+
         var critChance:Number = this.CriticalHit_;
         var randChance:Number = map_.gs_.gsc_.getNextDamage(0, 200);
         var erandChance:Number = map_.gs_.gsc_.getNextDamage(0, 100);
