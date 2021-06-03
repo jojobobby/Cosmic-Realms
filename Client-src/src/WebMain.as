@@ -118,6 +118,7 @@ public class WebMain extends Sprite {
     }
 
     private function setup():void {
+        stage.frameRate = 15;
         this.initFlashVars();
         this.setEnvironment();
         this.hackParameters();
@@ -131,9 +132,6 @@ public class WebMain extends Sprite {
         UIUtils.toggleQuality(Parameters.data_.uiQuality);
         if (Parameters.data_.fpsMode == undefined) {
             Parameters.data_.fpsMode = "60";
-        }
-        if (Parameters.data_.GPURender == true) {
-            Parameters.data_.GPURender = false;
         }
         stage.frameRate = 60;
         if (Parameters.data_.GPURender == true) {
