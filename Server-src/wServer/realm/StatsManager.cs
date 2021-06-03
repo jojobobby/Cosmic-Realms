@@ -173,12 +173,12 @@ namespace wServer.realm
         {
             var returnamount = 0;
             var rand2Chance = Owner.Stats[7]; //Wisdomi
-            if (rand2Chance >= 30 && Owner.Inventory[1].ObjectType.ToString() == "0x7a47") //Wis above30 | scale
+            if (rand2Chance >= 100) //Wis above30 | scale
             {
                 returnamount = (Owner.Stats[7] / 100);
             }
 
-            var randChance = Owner.Client.Random.NextIntRange(0, 200); //Raw crit chance
+            var randChance = Owner.Client.Random.NextIntRange(0, 250); //Raw crit chance
             var erandChance = Owner.Client.Random.NextIntRange(0, 100); //Raw Spirited crit chance
             var ret = 1.0f + returnamount; //raw crit Multiplier
 
