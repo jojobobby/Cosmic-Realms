@@ -396,7 +396,7 @@ namespace wServer.realm.commands
             player.SendInfo("Market Successfully cleared!");
             return true;
         }
-    } 
+    }
 
     class ClearSpawnsCommand : Command
     {
@@ -1095,8 +1095,9 @@ namespace wServer.realm.commands
         {
 
             var acc = player.Manager.Database.GetAccount(player.AccountId);
-
-            player.SendInfo("Currently have:[" + acc.TQamount + "] left");
+            player.SendInfo("Currently have:[" + acc.TQamount + "] Realm TQs left.");
+            player.SendInfo("Currently have:[" + acc.TQMamount + "] Moon TQs left.");
+            player.SendInfo("Currently have:[" + acc.TQDamount + "] Dungeon TQs left.");
             return true;
 
 
@@ -1327,7 +1328,7 @@ namespace wServer.realm.commands
         {
             var acc = player.Manager.Database.GetAccount(player.AccountId);
 
-           
+
             if (player.Owner is Moon && acc.TQMamount > 0)
             {
                 acc.TQMamount -= 1;
@@ -1350,7 +1351,7 @@ namespace wServer.realm.commands
                 player.TeleportPosition(time, player.Quest.RealX, player.Quest.RealY + 4, true);
                 return true;
             }
-            else if (acc.TQDamount > 0)
+            else if (acc.TQDamount > 0 && player.Owner is not Realm && player.Owner is not Moon)
             {
                 acc.TQDamount -= 1;
                 acc.FlushAsync();
@@ -1363,7 +1364,7 @@ namespace wServer.realm.commands
             }
             else
             {
-                player.SendInfo("Issue, Please Fix.");
+                player.SendInfo("you have no TQs for this place, do /tqamount for more info ");
                 return false;
             }
         }
@@ -1385,7 +1386,7 @@ namespace wServer.realm.commands
             var name = args.Substring(0, index);
             var rank = int.Parse(args.Substring(index + 1));
 
-            if(rank > player.Rank)
+            if (rank > player.Rank)
                 return false;
 
             if (Database.GuestNames.Contains(name, StringComparer.InvariantCultureIgnoreCase))
@@ -2339,11 +2340,11 @@ namespace wServer.realm.commands
 
         protected override bool Process(Player player, RealmTime time, string args)
         {
-            var db = player.Manager.Database; 
+            var db = player.Manager.Database;
             // var id = player.Manager.Database.ResolveId(player.Client.Account.Name);
             var acc = db.GetAccount(player.AccountId);
             var x = player.Client.Account.Rank;
-            int y = 0; 
+            int y = 0;
             if (acc.SkinsClaimed == false)
             {
                 db.AddGift(acc, 0x6184);
@@ -2436,7 +2437,8 @@ namespace wServer.realm.commands
         protected override bool Process(Player player, RealmTime time, string args)
         {
             player.SendInfo("Current time of day: " + player.Manager.CurrentDatetime);
-            if (player.Manager.CurrentDatetime >= 47999) {
+            if (player.Manager.CurrentDatetime >= 47999)
+            {
 
             }
 
@@ -2716,23 +2718,23 @@ namespace wServer.realm.commands
     internal class EventCommand : Command
     {
         public EventCommand() : base("event", permLevel: 200) { }
-        private string[] EventsList = new string[] {"Blood Moon","Oryx Arena","Loot Boost","Stat Boost" };
+        private string[] EventsList = new string[] { "Blood Moon", "Oryx Arena", "Loot Boost", "Stat Boost" };
         private EventsInfo eventsInfo = Program.Config.eventsInfo;
         protected override bool Process(Player player, RealmTime time, string args)
         {
             if (String.IsNullOrWhiteSpace(args))
             {
-                string events = "";  
+                string events = "";
                 player.SendError("Usage: /event <Event Name>");
                 for (int i = 0; i < EventsList.Length; i++)
-                    events += EventsList[i]+", ";
-                player.SendInfo("Avalibale Events: "+events);
+                    events += EventsList[i] + ", ";
+                player.SendInfo("Avalibale Events: " + events);
                 return false;
             }
-            if(args.ContainsIgnoreCase("Loot Boost"))
+            if (args.ContainsIgnoreCase("Loot Boost"))
             {
                 var arg = args.Split(' ');
-                if(arg.Length == 3)
+                if (arg.Length == 3)
                 {
                     if (Convert.ToDouble(arg[2]) == 0)
                     {
@@ -2788,14 +2790,14 @@ namespace wServer.realm.commands
             if (args.ContainsIgnoreCase("Oryx Arena"))
             {
                 return false;
-                if(player.Owner is Nexus)
+                if (player.Owner is Nexus)
                 {
                     var portal = new Portal(player.Manager, 0x441c, null)
                     {
                         Name = "Locked Oryx's Arena Portal",
                         WorldInstance = player.Owner
                     };
-                    
+
                     portal.Name = "Locked Oryx's Arena Portal";
                     portal.Move(335f, 149f);
                     player.Owner.EnterWorld(portal);
@@ -2808,7 +2810,7 @@ namespace wServer.realm.commands
                 }
 
             }
-            if(args.ContainsIgnoreCase("Blood Moon"))
+            if (args.ContainsIgnoreCase("Blood Moon"))
             {
                 var arg = args.Split(' ');
                 if (arg.Length == 3)
@@ -2821,11 +2823,11 @@ namespace wServer.realm.commands
                     }
                     try
                     {
-                        if(arg[2].ContainsIgnoreCase("Legendary") || arg[2].ContainsIgnoreCase("Epic") || arg[2].ContainsIgnoreCase("Rare"))
+                        if (arg[2].ContainsIgnoreCase("Legendary") || arg[2].ContainsIgnoreCase("Epic") || arg[2].ContainsIgnoreCase("Rare"))
                         {
                             var tier = arg[2];
                             player.Manager.Chat.Announce($"{player.Name} has hosted a {tier} Blood Moon event!");
-                             eventsInfo.BloodMoon = new Tuple<bool, string>(true, tier.ToLower());
+                            eventsInfo.BloodMoon = new Tuple<bool, string>(true, tier.ToLower());
                             return true;
                         }
 

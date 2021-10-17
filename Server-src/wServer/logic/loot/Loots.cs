@@ -258,6 +258,9 @@ namespace wServer.logic.loot
             string x2 = "";
             int color = 0;
             string bagURL = "";
+            var myth = new List<string>();
+            var leggie = new List<string>();
+            var Radi = new List<string>();
             if (owners.Count() == 1 && owners[0].LDBoostTime > 0)
             {
                 boosted = true;
@@ -294,11 +297,9 @@ namespace wServer.logic.loot
                                     found = true;
                                 }
                             }
-                        dmgpercentage = (float)Math.Round(damage / (double)enemy.MaximumHP * 100, 2);
-                        if (dmgpercentage > 100)
-                            dmgpercentage = 100;
-                        enemy.Manager.Chat.LootNotifier($"[{owners[0].Name}] just got some {x2} loot, [{i.ObjectId}] with {dmgpercentage}% damage dealt!");
-                       // wServer.networking.webhooks.Webhooks.SendToDiscordAsLootLog("Cyberious Loot", x2, owners[0].Name + " just got: **" + i.ObjectId + "**\nDamage Dealt: " + dmgpercentage + "%", color, bagURL);
+                        myth.Add(i.ObjectId);
+                        // enemy.Manager.Chat.LootNotifier($"[{owners[0].Name}] just got some {x2} loot, [{i.ObjectId}] with {dmgpercentage}% damage dealt!");
+                        // wServer.networking.webhooks.Webhooks.SendToDiscordAsLootLog("Cyberious Loot", x2, owners[0].Name + " just got: **" + i.ObjectId + "**\nDamage Dealt: " + dmgpercentage + "%", color, bagURL);
                         owners[0].Client.SendPacket(new GlobalNotification() { Text = x2 + "PopupUI" });
                     }
                     catch { }
@@ -321,11 +322,9 @@ namespace wServer.logic.loot
                                     found = true;
                                 }
                             }
-                        dmgpercentage = (float)Math.Round(damage / (double)enemy.MaximumHP * 100, 2);
-                        if (dmgpercentage > 100)
-                            dmgpercentage = 100;
-                        enemy.Manager.Chat.LootNotifier($"[{owners[0].Name}] just got some {x2} loot, [{i.ObjectId}] with {dmgpercentage}% damage dealt!");
-                       // wServer.networking.webhooks.Webhooks.SendToDiscordAsLootLog("Cyberious Loot", x2, owners[0].Name + " just got: **" + i.ObjectId + "**\nDamage Dealt: " + dmgpercentage + "%", color, bagURL);
+                        leggie.Add(i.ObjectId);
+                        // enemy.Manager.Chat.LootNotifier($"[{owners[0].Name}] just got some {x2} loot, [{i.ObjectId}] with {dmgpercentage}% damage dealt!");
+                        // wServer.networking.webhooks.Webhooks.SendToDiscordAsLootLog("Cyberious Loot", x2, owners[0].Name + " just got: **" + i.ObjectId + "**\nDamage Dealt: " + dmgpercentage + "%", color, bagURL);
                         owners[0].Client.SendPacket(new GlobalNotification() { Text = x2 + "PopupUI" });
                     }
                     catch { }
@@ -348,11 +347,9 @@ namespace wServer.logic.loot
                                     found = true;
                                 }
                             }
-                        dmgpercentage = (float)Math.Round(damage / (double)enemy.MaximumHP * 100, 2);
-                        if (dmgpercentage > 100)
-                            dmgpercentage = 100;
-                        enemy.Manager.Chat.LootNotifier($"[{owners[0].Name}] JUST GOT {x2} ITEM! ({i.ObjectId})");
-                       // wServer.networking.webhooks.Webhooks.SendToDiscordAsLootLog("Cyberious Loot", x2, owners[0].Name + " just got: **" + i.ObjectId + "**\nDamage Dealt: " + dmgpercentage + "%", color, bagURL);
+                        Radi.Add(i.ObjectId);
+                        // enemy.Manager.Chat.LootNotifier($"[{owners[0].Name}] JUST GOT {x2} ITEM! ({i.ObjectId})");
+                        // wServer.networking.webhooks.Webhooks.SendToDiscordAsLootLog("Cyberious Loot", x2, owners[0].Name + " just got: **" + i.ObjectId + "**\nDamage Dealt: " + dmgpercentage + "%", color, bagURL);
                         owners[0].Client.SendPacket(new GlobalNotification() { Text = x2 + "PopupUI" });
 
                     }
@@ -369,6 +366,24 @@ namespace wServer.logic.loot
                 bagType = 0;
                 items = new Item[8];
                 idx = 0;
+            }
+            if (myth.Count + leggie.Count + Radi.Count != 0)
+            {
+                dmgpercentage = (float)Math.Round(damage / (double)enemy.MaximumHP * 100, 2);
+                if (dmgpercentage > 100)
+                    dmgpercentage = 100;
+            }
+            if (myth.Count != 0)
+            {
+                enemy.Manager.Chat.LootNotifier($"[{owners[0].Name}] just got some Mythical loot, [{string.Join(",", myth)}] with {dmgpercentage}% damage dealt!");
+            }
+            if (leggie.Count != 0)
+            {
+                enemy.Manager.Chat.LootNotifier($"[{owners[0].Name}] just got some Legendary loot, [{string.Join(",", leggie)}] with {dmgpercentage}% damage dealt!");
+            }
+            if (Radi.Count != 0)
+            {
+                enemy.Manager.Chat.LootNotifier($"[{owners[0].Name}] JUST GOT Radiant LOOT! [{string.Join(",", Radi)}] with {dmgpercentage}% damage dealt!");
             }
             if (idx > 0)
             {
