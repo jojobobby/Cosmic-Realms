@@ -1,5 +1,5 @@
 # Cosmic-Realms
-Cosmic Relms Sourcefiles
+Cosmic Realms Sourcefiles
 
 Have fun using this source.
 
@@ -53,12 +53,12 @@ Speical Thanks to:
 Known Issues (I don't feel like looking into & you should if you want to use this source.)
 --------
 
--Conditional Effects do not display on Players but only on Enemies. //"Damage" GameObject.as
+-Conditional Effects do not display their condition above player head, instead only shows icon. //"Damage" GameObject.as
 
--Fps lag whenever you move your mouse around. Use Adobe Scout to assist in this fix. //"attemptAttackAngle" in MapUserInput.as
+-Fps drops. //"attemptAttackAngle" in MapUserInput.as
 
--Remove Moon Closing becuase it is not done yet. //Moon.cs
+-Moon Closing feature is not finished, should be removed unless you'll be building upon it. //Moon.cs
 
--Fix TQ command not working. //RankedCommands.cs "Tq"
+-Tq command has some issues when being used in realm. //RankedCommands.cs "Tq"
 
--Fix Chat Scaling to 0 on default. - I should have fixed this but i cannot test.
+-Chat scaling is set to 0 by default. - I should have fixed this but i cannot test.
