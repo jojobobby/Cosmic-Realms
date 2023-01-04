@@ -1,5 +1,5 @@
-# Cosmic-Realms
-Cosmic Realms Sourcefiles
+# Cosmic Realms Private Server
+Cosmic Realms Private Server Sourcefiles
 
 Have fun using this source.
 
@@ -35,7 +35,7 @@ Speical Thanks to:
 
 -Tidan : Owner / Content Developer
 
--Ghostmaree : Base Source Owner
+-Ghostmaree : Original Source Owner
 
 -Keathiz : Hack Prevention
 
